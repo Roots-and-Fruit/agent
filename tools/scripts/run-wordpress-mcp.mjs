@@ -56,12 +56,20 @@ const childEnv = {
   OAUTH_ENABLED: process.env.OAUTH_ENABLED ?? "false",
 };
 
-const npxCmd = process.platform === "win32" ? "C:\\PROGRA~1\\nodejs\\npx.cmd" : "npx";
-const spawnCommand = process.platform === "win32" ? "C:\\Windows\\System32\\cmd.exe" : npxCmd;
-const spawnArgs =
-  process.platform === "win32"
-    ? ["/c", npxCmd, "-y", "@automattic/mcp-wordpress-remote@latest"]
-    : ["-y", "@automattic/mcp-wordpress-remote@latest"];
+const packageSpec = "@automattic/mcp-wordpress-remote@latest";
+let spawnCommand;
+let spawnArgs;
+
+if (process.platform === "win32") {
+  // npx.cmd cannot be spawned with shell:false (EINVAL). cmd.exe breaks paths with "&".
+  const nodeExe = process.execPath;
+  const npxCli = path.join(path.dirname(nodeExe), "node_modules", "npm", "bin", "npx-cli.js");
+  spawnCommand = nodeExe;
+  spawnArgs = [npxCli, "-y", packageSpec];
+} else {
+  spawnCommand = "npx";
+  spawnArgs = ["-y", packageSpec];
+}
 
 const child = spawn(spawnCommand, spawnArgs, {
   cwd: clientRoot,

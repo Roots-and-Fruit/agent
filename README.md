@@ -29,17 +29,13 @@ Open **`rootsandfruit.code-workspace`** in Cursor for both folders (expects `../
    git clone https://github.com/Roots-and-Fruit/abilities.git abilities
    ```
 
-2. **Sibling parent folder:** If you open `rootsandfruit-as-client/` (parent of `agent/` + `abilities/`), copy workspace-root files to the parent:
+2. **Sibling parent folder:** If you open `rootsandfruit-as-client/` (parent of `agent/` + `abilities/`), sync workspace-root to the parent:
 
    ```powershell
-   mkdir ..\.cursor\skills -Force
-   xcopy /E /I /Y workspace-root\.cursor\skills ..\.cursor\skills
-   copy workspace-root\.cursor\mcp.json ..\.cursor\mcp.json
-   copy workspace-root\.cursorignore ..\.cursorignore
-   copy workspace-root\.cursorindexingignore ..\.cursorindexingignore
+   .\tools\scripts\sync-workspace-root.ps1
    ```
 
-   Cursor loads `.cursor/mcp.json` and discovers `.cursor/skills/` from the **opened folder**. Skills map and @Docs list: [`agent_docs/cursor-context-stack.md`](agent_docs/cursor-context-stack.md).
+   Generates `00-rf-boot.mdc` from `AGENT-BOOT.md` and copies hooks, rules, skills, and `mcp.json` to the parent. Stack map: [`agent_docs/cursor-context-stack.md`](agent_docs/cursor-context-stack.md).
 
 3. **Configure credentials:**
 
@@ -88,7 +84,3 @@ git push -u origin main
 ```
 
 ---
-
-## Optional: GROOT monorepo
-
-When this workspace lives under `GROOT/CLIENTS/`, you may add `groot` / `groot-mapper` filesystem MCPs to `.cursor/mcp.json` locally. The standalone config ships with **wordpress-rootsandfruit** only.

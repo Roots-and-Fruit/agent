@@ -1,0 +1,56 @@
+# Roots & Fruit — agent boot card
+
+Single source for the always-on boot rule (`00-rf-boot.mdc`). Index: `agent/AGENTS.md`. Routing recipes: `agent/agent_docs/mcp-routing.md`. Regenerate rule: `.\tools\scripts\sync-workspace-root.ps1`.
+
+## Workspace
+
+- **Site:** https://rootsandfruit.com (WordPress 6.9+, Kadence, Breeze, Cloudways)
+- **Layout:** `agent/` (Cursor ops) + `abilities/` (plugin source) — sibling repos
+- **Open:** parent folder or `rootsandfruit.code-workspace`; MCP + skills at workspace root `.cursor/`
+
+## Default: MCP abilities first
+
+Cursor → `wordpress-rootsandfruit` MCP → MCP Adapter → `rootsandfruit/*` abilities → in-process `gk-block-mcp` for blocks.
+
+- **Block body:** `rootsandfruit/blocks-*` only — never body HTML via `update-post`
+- **`blocks-insert`:** include `innerHTML` for static blocks (`core/heading`, `core/paragraph`)
+- **Title/excerpt:** `rootsandfruit/update-post`
+- **Gaps** (author, cache purge): WP REST **escape hatch** only
+- **No delete** abilities — do not trash/delete via MCP
+- **No second** `@gravitykit/block-mcp` Node MCP
+
+## Credentials
+
+| Profile | Use |
+|---------|-----|
+| Content agent (`.env` default) | Posts, blocks, preview |
+| Admin Application Password | `snippets-*`, `plugin-update-safe` |
+
+Discover may list abilities the user cannot execute — execution fails at permission check.
+
+## Legwork (before claiming done)
+
+From `agent/`:
+
+```powershell
+.\tools\scripts\test-wordpress-mcp-http.ps1 -ExpectRfAbilities -ExpectBlocks
+.\tools\scripts\audit-mcp-abilities.ps1 -ExpectBlocks
+php -l ..\abilities\<file>.php
+```
+
+After author/byline changes: **purge Breeze cache** before sharing logged-out preview URLs.
+
+## Skills
+
+- Site ops: **`rf-wordpress-ops`** · Plugin dev: **`rf-abilities-dev`** (under `abilities/`)
+- New skills: invoke **`/write-a-skill`** first
+
+## Deploy
+
+Git push to `abilities` does **not** update production. Ship via GitHub **release tag + zip** (Git Updater). See `abilities/GITHUB.md`.
+
+## Boundaries
+
+**Ask first:** Published prod writes; plugin deploy/GitHub releases; edits outside `agent/` + `abilities/`.
+
+**Never:** Commit `.env`; trash/delete via MCP; add second block MCP; claim verified without script/lint output.
