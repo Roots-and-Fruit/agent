@@ -1,0 +1,11 @@
+﻿# Secrets (defense in depth — also gitignored)
+.env
+.env.*
+!.env.example
+
+# Local build / release artifacts
+*.zip
+
+# OS junk
+.DS_Store
+Thumbs.db

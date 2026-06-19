@@ -29,7 +29,19 @@ Open **`rootsandfruit.code-workspace`** in Cursor for both folders (expects `../
    git clone https://github.com/Roots-and-Fruit/abilities.git abilities
    ```
 
-2. **Configure credentials:**
+2. **Sibling parent folder:** If you open `rootsandfruit-as-client/` (parent of `agent/` + `abilities/`), copy workspace-root files to the parent:
+
+   ```powershell
+   mkdir ..\.cursor\skills -Force
+   xcopy /E /I /Y workspace-root\.cursor\skills ..\.cursor\skills
+   copy workspace-root\.cursor\mcp.json ..\.cursor\mcp.json
+   copy workspace-root\.cursorignore ..\.cursorignore
+   copy workspace-root\.cursorindexingignore ..\.cursorindexingignore
+   ```
+
+   Cursor loads `.cursor/mcp.json` and discovers `.cursor/skills/` from the **opened folder**. Skills map and @Docs list: [`agent_docs/cursor-context-stack.md`](agent_docs/cursor-context-stack.md).
+
+3. **Configure credentials:**
 
    ```powershell
    copy .env.example .env

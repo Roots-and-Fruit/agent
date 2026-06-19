@@ -1,0 +1,8 @@
+# Planning scratch — rarely needed in @Codebase results
+agent/.cursor/plans/
+
+# Point-in-time release notes (tags/GitHub are canonical)
+abilities/RELEASE-*.md
+
+# Duplicate of parent .cursor/mcp.json — not source of truth
+agent/workspace-root/

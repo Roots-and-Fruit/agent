@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "groot": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "C:\\PROGRA~1\\nodejs\\npx.cmd",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "c:/Users/reach/GROOT"
+      ]
+    },
+    "groot-mapper": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "C:\\PROGRA~1\\nodejs\\npx.cmd",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "c:/Users/reach/GROOT/_ORCHESTRATOR"
+      ]
+    },
+    "wordpress-rootsandfruit": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "C:\\PROGRA~1\\nodejs\\node.exe",
+        "${workspaceFolder}/agent/tools/scripts/run-wordpress-mcp.mjs"
+      ],
+      "env": {
+        "OAUTH_ENABLED": "false"
+      }
+    }
+  }
+}

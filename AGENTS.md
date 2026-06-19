@@ -117,7 +117,11 @@ php -l ..\abilities\rootsandfruit-abilities.php
 | Topic | Path |
 |-------|------|
 | MCP tool choice, parameters, REST escape hatches | `agent_docs/mcp-routing.md` |
+| **Context stack** (@Docs, skills map, sync script) | `agent_docs/cursor-context-stack.md` |
 | Architecture, security model, design patterns | `posts/managing-wordpress-via-cursor.md` |
 | Server plugin dependencies, Cursor Agent role caps | `docs/wordpress-plugins.md` |
 | Implementation phases and status | `.cursor/plans/rf-abilities-plugin.md` |
 | GitHub release + Git Updater | `../abilities/GITHUB.md` |
+| **Authoring Cursor skills** | `.cursor/skills/write-a-skill/` at workspace root — invoke **`/write-a-skill`** before creating or editing any skill |
+| **Site ops (MCP-first)** | `.cursor/skills/rf-wordpress-ops/` |
+| **Abilities plugin dev** | `abilities/.cursor/skills/rf-abilities-dev/` |

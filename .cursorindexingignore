@@ -1,0 +1,5 @@
+# Planning scratch — rarely needed in @Codebase results
+.cursor/plans/
+
+# Duplicate MCP template — canonical copy lives at sibling workspace root
+workspace-root/
