@@ -1,0 +1,57 @@
+{
+  "clientDisplayName": "Roots and Fruit AS",
+  "mcp": {
+    "helpscout": false,
+    "drip": false,
+    "dataforseo": false,
+    "google-analytics": false,
+    "google-search-console": false
+  },
+  "content": {
+    "postSitemapUrl": null
+  },
+  "tools": {
+    "voiceprint": {
+      "enabled": false
+    },
+    "seo-dataforseo": {
+      "enabled": false
+    },
+    "drip-mcp": {
+      "enabled": false
+    },
+    "ga-fetch": {
+      "enabled": false
+    },
+    "site-content-catalog": {
+      "enabled": false
+    },
+    "information-gain": {
+      "enabled": false
+    },
+    "fan-out-coverage": {
+      "enabled": false
+    },
+    "llms-txt-audit": {
+      "enabled": false
+    },
+    "organic-architecture": {
+      "enabled": false
+    },
+    "workflows": {
+      "enabled": false
+    },
+    "lp-optimization": {
+      "enabled": false
+    },
+    "cornerstone-competitor": {
+      "enabled": false
+    },
+    "vendor-pipeline": {
+      "enabled": false
+    },
+    "ga4-cta-report": {
+      "enabled": false
+    }
+  }
+}

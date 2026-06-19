@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "wordpress-rootsandfruit": {
+      "command": "C:\\Windows\\System32\\cmd.exe",
+      "args": [
+        "/c",
+        "C:\\PROGRA~1\\nodejs\\node.exe",
+        "${workspaceFolder}\\tools\\scripts\\run-wordpress-mcp.mjs"
+      ],
+      "env": {
+        "OAUTH_ENABLED": "false"
+      }
+    }
+  }
+}
