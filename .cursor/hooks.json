@@ -14,6 +14,9 @@
     "afterFileEdit": [
       {
         "command": "node .cursor/hooks/after-php-edit.mjs"
+      },
+      {
+        "command": "node .cursor/hooks/after-mcp-json-edit.mjs"
       }
     ]
   }

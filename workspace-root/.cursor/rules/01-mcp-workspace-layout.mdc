@@ -1,0 +1,26 @@
+---
+description: Dual mcp.json layout — edit workspace-root template only, then sync
+alwaysApply: true
+---
+
+# MCP config — do not edit the wrong file
+
+Cursor loads **project** MCP from the folder you opened:
+
+| You opened | Active config |
+|------------|----------------|
+| Parent `website/` or `rootsandfruit.code-workspace` | `website/.cursor/mcp.json` |
+| `agent/` folder alone | `agent/.cursor/mcp.json` |
+
+**Single source of truth:** `agent/workspace-root/.cursor/mcp.json`
+
+**After any MCP server change:**
+
+1. Edit the template only (not parent or `agent/.cursor/mcp.json` directly).
+2. From `agent/`: `.\tools\scripts\sync-workspace-root.ps1`
+3. `.\tools\scripts\test-mcp-config.ps1`
+4. Reload Cursor.
+
+Path prefix in template: `${workspaceFolder}/agent/tools/scripts/…` — sync rewrites to `${workspaceFolder}/tools/scripts/…` for `agent/.cursor/mcp.json`.
+
+Deep doc: `agent/agent_docs/mcp-workspace-layout.md`

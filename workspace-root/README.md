@@ -23,6 +23,8 @@ Cursor loads `.cursor/mcp.json`, **rules**, **hooks**, and **skills** from the *
 
 **WordPress MCP:** loads credentials from `agent/.env`.
 
+**Two `mcp.json` files:** parent uses `${workspaceFolder}/agent/tools/scripts/…`; `agent/.cursor/mcp.json` uses `${workspaceFolder}/tools/scripts/…` when you open the `agent/` folder alone. `sync-workspace-root.ps1` keeps both in sync from `workspace-root/.cursor/mcp.json`.
+
 ## Sync (from `agent/`)
 
 ```powershell

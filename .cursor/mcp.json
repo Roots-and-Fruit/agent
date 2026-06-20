@@ -8,6 +8,34 @@
       "env": {
         "OAUTH_ENABLED": "false"
       }
+    },
+    "block-mcp-rootsandfruit-com": {
+      "command": "C:\\PROGRA~1\\nodejs\\node.exe",
+      "args": [
+        "${workspaceFolder}/tools/scripts/run-block-mcp.mjs"
+      ]
+    },
+    "dataforseo": {
+      "command": "C:\\PROGRA~1\\nodejs\\node.exe",
+      "args": [
+        "${workspaceFolder}/tools/scripts/run-dataforseo-mcp.mjs"
+      ]
+    },
+    "specification-website": {
+      "transport": "http",
+      "url": "https://mcp.specification.website/mcp"
+    },
+    "plausible": {
+      "command": "C:\\PROGRA~1\\nodejs\\node.exe",
+      "args": [
+        "${workspaceFolder}/tools/scripts/run-plausible-mcp.mjs"
+      ]
+    },
+    "searchconsole": {
+      "command": "C:\\PROGRA~1\\nodejs\\node.exe",
+      "args": [
+        "${workspaceFolder}/tools/scripts/run-searchconsole-mcp.mjs"
+      ]
     }
   }
 }

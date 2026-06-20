@@ -63,6 +63,8 @@ Run from **`agent/`** root in PowerShell:
 |---------|---------|
 | `.\tools\scripts\test-wordpress-mcp-http.ps1 -ExpectRfAbilities -ExpectBlocks` | MCP transport + R&F + block abilities |
 | `.\tools\scripts\audit-mcp-abilities.ps1 -ExpectBlocks` | MCP discover vs REST catalog |
+| `.\tools\scripts\test-analytics-mcp-env.ps1` | Plausible + Search Console MCP credentials preflight |
+| `.\tools\scripts\test-mcp-config.ps1` | Parent + agent `mcp.json` match workspace-root template |
 | `php -l ..\abilities\rootsandfruit-abilities.php` | PHP syntax (from workspace; plugin in sibling repo) |
 
 Plugin releases: see `../abilities/GITHUB.md`.

@@ -16,7 +16,7 @@ Authoritative routing: `agent/AGENTS.md` and `agent/agent_docs/mcp-routing.md`. 
 | Block body, patterns, Gutenberg tree | `rootsandfruit/blocks-*` |
 | Title or excerpt only | `rootsandfruit/update-post` |
 | Listed `rootsandfruit/*` workflow | `mcp-adapter-execute-ability` |
-| No ability (author, cache purge, …) | **escape hatch** — WP REST |
+| No ability (cache purge, …) | **escape hatch** — WP REST |
 
 **Block posts:** never push body HTML through `update-post`.
 
@@ -63,6 +63,7 @@ php -l ..\abilities\<touched-file>.php
 
 - **Breeze:** after author or byline-affecting meta, purge cache before sharing **logged-out** public preview URLs.
 - **Preview:** `enable-public-preview` → test incognito.
+- **Article publish:** full draft → blocks → preview flow → `/rf-article-publish` skill.
 - **Catalog:** run audit after deploys — do not hardcode ability lists in chat.
 
 **Done when:** post-steps applied or explicitly N/A for the task.

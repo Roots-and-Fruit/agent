@@ -74,13 +74,15 @@ Run `mcp-adapter-discover-abilities` or `audit-mcp-abilities.ps1` after deploys.
 | Module | Abilities | Permission basis |
 |--------|-----------|------------------|
 | Health | `ping` | `read` |
-| Content | `list-posts`, `get-post`, `create-draft`, `update-post`, `publish-post` | `edit_posts` / `edit_post` / `publish_posts` |
+| Content | `list-posts`, `get-post`, `create-draft`, `update-post`, `publish-post`, `set-post-author` | `edit_posts` / `edit_post` / `publish_posts` / `edit_others_posts` |
 | Preview | `enable-public-preview`, `get-public-preview-url` | `edit_post` (requires Public Post Preview plugin) |
 | Blocks | `blocks-get-page`, `blocks-update`, `blocks-mutate`, `blocks-insert`, `blocks-create-page`, `blocks-list-patterns` | `edit_post` (requires `gk-block-mcp`) |
 | Snippets | `snippets-list` … `snippets-verify` | `unfiltered_html` |
 | Plugins | `plugin-update-safe` | `update_plugins` |
 
-**Not registered:** post delete, author change, cache purge. Use REST or add a new ability.
+**Not registered:** post delete, cache purge. Use REST or add a new ability.
+
+**Author:** prefer `rootsandfruit/set-post-author`; REST fallback in escape hatches section.
 
 ---
 
@@ -164,7 +166,23 @@ Use returned `ref` values (e.g. `blk_abc63392b`) for targeted edits — stable a
 
 Prefer live writes on **drafts**. Use `dry_run: true` cautiously on empty posts — output schema may reject `revision_id: 0`.
 
-**Step E — public preview link**
+**Step E — set author (when not the MCP user)**
+
+Default article byline on rootsandfruit.com: **user ID `1`**. Use unless the operator specifies another author.
+
+```json
+{
+  "ability_name": "rootsandfruit/set-post-author",
+  "parameters": {
+    "post_id": 1306,
+    "author": 1
+  }
+}
+```
+
+`author` accepts user ID (integer) or login (string). Response includes `breeze_purge_reminder: true` — purge Breeze before sharing logged-out preview URLs.
+
+**Step F — public preview link**
 
 ```json
 {
@@ -175,7 +193,7 @@ Prefer live writes on **drafts**. Use `dry_run: true` cautiously on empty posts 
 
 Returns `preview_url` with `preview=1&_ppp=…`. Test logged out in incognito.
 
-**Step F — title/excerpt only (not block body)**
+**Step G — title/excerpt only (not block body)**
 
 ```json
 {
@@ -235,9 +253,9 @@ Check `preference.tier` and `has_legacy_blocks` before inserting Kadence/legacy 
 
 Use when **no ability exists**. Same Application Password as MCP.
 
-### Change post author
+### Change post author (REST fallback)
 
-No `rootsandfruit/*` ability yet. REST:
+Prefer **`rootsandfruit/set-post-author`** (see recipe Step E). REST fallback when ability unavailable:
 
 ```http
 POST /wp-json/wp/v2/posts/{id}

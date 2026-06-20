@@ -43,7 +43,13 @@ function Sync-Tree {
 }
 
 if ($AgentOnly) {
-    Sync-Tree (Join-Path $templateRoot ".cursor\rules") (Join-Path $agentRoot ".cursor\rules") "boot rule"
+    $layoutRule = Join-Path $templateRoot ".cursor\rules\01-mcp-workspace-layout.mdc"
+    if (Test-Path $layoutRule) {
+        $dest = Join-Path $agentRoot ".cursor\rules"
+        New-Item -ItemType Directory -Force -Path $dest | Out-Null
+        Copy-Item $layoutRule (Join-Path $dest "01-mcp-workspace-layout.mdc") -Force
+        Write-Host "Synced 01-mcp-workspace-layout.mdc -> agent/.cursor/rules/"
+    }
     Sync-Tree (Join-Path $templateRoot ".cursor\hooks") (Join-Path $agentRoot ".cursor\hooks") "hooks"
     Copy-Item (Join-Path $templateRoot ".cursor\hooks.json") (Join-Path $agentRoot ".cursor\hooks.json") -Force
     Write-Host "Agent-only sync done."
@@ -65,6 +71,18 @@ foreach ($file in @("hooks.json", "mcp.json")) {
     }
 }
 
+$mcpTemplate = Join-Path $templateRoot ".cursor\mcp.json"
+if (Test-Path $mcpTemplate) {
+    $agentMcp = [System.IO.File]::ReadAllText($mcpTemplate, $utf8NoBom).Replace(
+        '${workspaceFolder}/agent/tools/scripts/',
+        '${workspaceFolder}/tools/scripts/'
+    )
+    $agentMcpDest = Join-Path $agentRoot ".cursor\mcp.json"
+    New-Item -ItemType Directory -Force -Path (Split-Path $agentMcpDest) | Out-Null
+    [System.IO.File]::WriteAllText($agentMcpDest, $agentMcp, $utf8NoBom)
+    Write-Host "Synced agent/.cursor/mcp.json (workspaceFolder paths adjusted)"
+}
+
 foreach ($file in @(".cursorignore", ".cursorindexingignore")) {
     $src = Join-Path $templateRoot $file
     if (Test-Path $src) {
@@ -82,5 +100,16 @@ if (Test-Path $agentRule) {
     Remove-Item $agentRule -Force
     Write-Host "Removed duplicate agent/.cursor/rules/00-rf-boot.mdc (use workspace root or -AgentOnly)"
 }
+
+$layoutRule = Join-Path $templateRoot ".cursor\rules\01-mcp-workspace-layout.mdc"
+if (Test-Path $layoutRule) {
+    $dest = Join-Path $agentRoot ".cursor\rules"
+    New-Item -ItemType Directory -Force -Path $dest | Out-Null
+    Copy-Item $layoutRule (Join-Path $dest "01-mcp-workspace-layout.mdc") -Force
+    Write-Host "Synced 01-mcp-workspace-layout.mdc -> agent/.cursor/rules/"
+}
+
+Write-Host "Verifying MCP config parity ..."
+& (Join-Path $PSScriptRoot "test-mcp-config.ps1")
 
 Write-Host "Done. Reload Cursor window to pick up hooks/rules/MCP changes."

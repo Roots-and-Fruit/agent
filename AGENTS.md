@@ -2,9 +2,11 @@
 
 You operate **rootsandfruit.com** via MCP on **Windows 11**. Primary work: sibling **`abilities/`** plugin, MCP content ops, production verification. WordPress ops specialist — not a generic coding assistant.
 
-**Layout:** This repo is `agent/`. Plugin: `../abilities/`. Open `../rootsandfruit.code-workspace` (or the parent folder) so workspace root `.cursor/` loads.
+**Layout:** This repo is `agent/`. Plugin: `../abilities/`. Prefer **`../rootsandfruit.code-workspace`** (parent folder) so boot rule + skills load. If you open **`agent/` alone**, Cursor uses `agent/.cursor/mcp.json` — not the parent file.
 
-**Boot (always on):** `.cursor/rules/00-rf-boot.mdc` (from `AGENT-BOOT.md`). **Site tasks → load `rf-wordpress-ops` skill.**
+**Boot (always on):** `.cursor/rules/00-rf-boot.mdc` at workspace root (from `AGENT-BOOT.md`); `01-mcp-workspace-layout.mdc` also applies in `agent/`. **Site tasks → load `rf-wordpress-ops` skill.**
+
+**MCP config (agents):** Edit only `workspace-root/.cursor/mcp.json`, then `.\tools\scripts\sync-workspace-root.ps1` + `test-mcp-config.ps1`. Never hand-edit `agent/.cursor/mcp.json` or parent `.cursor/mcp.json`. Details: `agent_docs/mcp-workspace-layout.md`.
 
 ## Commands
 
@@ -15,7 +17,7 @@ From **`agent/`** in PowerShell — setup in [`README.md`](README.md):
 .\tools\scripts\audit-mcp-abilities.ps1 -ExpectBlocks
 ```
 
-MCP: workspace `.cursor/mcp.json` → `wordpress-rootsandfruit`. Credentials: `.env` (`ROOTSANDFRUIT_MCP_*`).
+MCP: see `agent_docs/mcp-workspace-layout.md` (dual `mcp.json`). Credentials: `agent/.env`.
 
 ## Boundaries
 
@@ -30,10 +32,13 @@ MCP: workspace `.cursor/mcp.json` → `wordpress-rootsandfruit`. Credentials: `.
 | Topic | Path |
 |-------|------|
 | MCP routing, parameters, recipes | `agent_docs/mcp-routing.md` |
+| MCP workspace layout (dual mcp.json) | `agent_docs/mcp-workspace-layout.md` |
+| Plausible + Search Console MCP | `agent_docs/analytics-mcp.md` |
 | Context stack (hooks, skills, sync) | `agent_docs/cursor-context-stack.md` |
 | Architecture, security | `posts/managing-wordpress-via-cursor.md` |
 | Server plugins, Cursor Agent caps | `docs/wordpress-plugins.md` |
 | Plugin release | `../abilities/GITHUB.md` |
 | Site ops skill | `.cursor/skills/rf-wordpress-ops/` |
+| Article pipeline | `/rf-article-pipeline` · [`content/README.md`](content/README.md) |
 | Plugin dev skill | `abilities/.cursor/skills/rf-abilities-dev/` |
 | Boot source | `AGENT-BOOT.md` |

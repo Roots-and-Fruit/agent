@@ -149,6 +149,7 @@ if ($ExpectRfAbilities) {
         'rootsandfruit/get-post',
         'rootsandfruit/create-draft',
         'rootsandfruit/update-post',
+        'rootsandfruit/set-post-author',
         'rootsandfruit/publish-post'
     )
     if ($RequirePreview) {

@@ -8,3 +8,8 @@ Thumbs.db
 # Secrets / local overrides
 .env.*
 !.env.example
+
+tools/scripts/node_modules/
+tools/scripts/__pycache__/
+tools/scripts/.tmp-*
+tools/scripts/.ping-tmp.json

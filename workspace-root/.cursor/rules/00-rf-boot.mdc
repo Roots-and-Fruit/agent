@@ -12,6 +12,7 @@ Single source for the always-on boot rule (`00-rf-boot.mdc`). Index: `agent/AGEN
 - **Site:** https://rootsandfruit.com (WordPress 6.9+, Kadence, Breeze, Cloudways)
 - **Layout:** `agent/` (Cursor ops) + `abilities/` (plugin source) — sibling repos
 - **Open:** parent folder or `rootsandfruit.code-workspace`; MCP + skills at workspace root `.cursor/`
+- **MCP config:** single source `agent/workspace-root/.cursor/mcp.json` → sync to parent **and** `agent/.cursor/mcp.json` (paths differ by open mode). See `agent/agent_docs/mcp-workspace-layout.md`. Verify: `.\tools\scripts\test-mcp-config.ps1`
 
 ## Default: MCP abilities first
 
@@ -20,7 +21,7 @@ Cursor → `wordpress-rootsandfruit` MCP → MCP Adapter → `rootsandfruit/*` a
 - **Block body:** `rootsandfruit/blocks-*` only — never body HTML via `update-post`
 - **`blocks-insert`:** include `innerHTML` for static blocks (`core/heading`, `core/paragraph`)
 - **Title/excerpt:** `rootsandfruit/update-post`
-- **Gaps** (author, cache purge): WP REST **escape hatch** only
+- **Author:** `rootsandfruit/set-post-author` (after plugin deploy); cache purge still manual
 - **No delete** abilities — do not trash/delete via MCP
 - **No second** `@gravitykit/block-mcp` Node MCP
 
