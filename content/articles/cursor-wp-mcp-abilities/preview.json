@@ -1,0 +1,19 @@
+{
+  "post_id": 1408,
+  "slug": "cursor-wp-mcp-abilities",
+  "status": "draft",
+  "author_id": 1,
+  "edit_url": "https://rootsandfruit.com/wp-admin/post.php?post=1408&action=edit",
+  "preview_url": "https://rootsandfruit.com/?p=1408&preview=1&_ppp=a72ae79a6c",
+  "blocks_count": 55,
+  "code_blocks": 2,
+  "striped_tables": 1,
+  "created": "2026-06-19",
+  "supersedes_post_ids": [
+    1313,
+    1400,
+    1406
+  ],
+  "note": "core/code via MCP; convert each code block to Code Pro in editor before publish",
+  "convert_code_pro": "Open edit_url → focus core/code → toolbar Convert to Code Pro → Save"
+}

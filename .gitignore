@@ -13,3 +13,4 @@ tools/scripts/node_modules/
 tools/scripts/__pycache__/
 tools/scripts/.tmp-*
 tools/scripts/.ping-tmp.json
+content/**/__pycache__/

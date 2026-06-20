@@ -1,0 +1,15 @@
+{
+  "primary": "wordpress content workflow",
+  "secondaries": [
+    "block editor publishing",
+    "wordpress draft workflow",
+    "content ops wordpress"
+  ],
+  "top_results": [
+    {
+      "url": "https://example.com/generic-wp-workflow",
+      "title": "How to Publish WordPress Content",
+      "baseline_topics": ["install plugins", "write post", "click publish"]
+    }
+  ]
+}

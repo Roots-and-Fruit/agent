@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publish Readiness — WordPress MCP Server with Cursor &amp; Abilities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --olive: #5c6b2e;
+      --olive-soft: #eef2e4;
+      --clay: #b86b4a;
+      --clay-soft: #f5ebe6;
+      --amber: #c9922a;
+      --amber-soft: #faf3e3;
+      --ink: #1a1a1a;
+      --muted: #5a5a5a;
+      --border: #ddd;
+      --bg: #fafaf8;
+      --card: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--bg);
+      margin: 0;
+      padding: 2rem 1rem 4rem;
+    }
+    .wrap { max-width: 820px; margin: 0 auto; }
+    h1, h2, h3 { font-family: "Source Serif 4", Georgia, serif; line-height: 1.25; }
+    h2 { font-size: 1.35rem; margin: 2rem 0 0.75rem; }
+    h3 { font-size: 1.05rem; margin: 1.25rem 0 0.5rem; }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 1.25rem 1.5rem; margin-bottom: 1.25rem; }
+    .doc-header { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 1.5rem; margin-bottom: 1.25rem; }
+    .doc-kicker { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--clay); margin: 0 0 0.5rem; }
+    .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; margin-top: 1rem; font-size: 0.9rem; }
+    .meta-grid dt { font-weight: 600; color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .meta-grid dd { margin: 0.15rem 0 0; }
+    ul.score-grid { list-style: none; padding: 0; margin: 1rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
+    ul.score-grid li { border: 1px solid var(--border); border-radius: 6px; padding: 0.85rem 1rem; background: var(--bg); }
+    ul.score-grid li.score-0 { border-color: var(--clay); background: var(--clay-soft); }
+    ul.score-grid li.score-1 { border-color: var(--amber); background: var(--amber-soft); }
+    ul.score-grid li.score-2 { border-color: var(--olive); background: var(--olive-soft); }
+    ul.score-grid .label { display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.35rem; }
+    ul.score-grid .value { font-size: 1.25rem; font-weight: 700; }
+    ul.score-grid .score-note { font-size: 0.85rem; font-style: italic; color: var(--muted); margin: 0.35rem 0 0; }
+    li.verdict-total { grid-column: 1 / -1; background: var(--olive-soft) !important; border-color: var(--olive) !important; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    .verdict-score { font-size: 1.75rem; font-weight: 700; color: var(--olive); }
+    .badge { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 4px; background: var(--clay); color: #fff; }
+    .badge.publish { background: var(--olive); }
+    .verdict-body { margin: 0; flex: 1; min-width: 200px; }
+    ul.keep-list { list-style: none; padding: 0; }
+    ul.keep-list li { padding: 0.35rem 0 0.35rem 1.5rem; position: relative; }
+    ul.keep-list li::before { content: "✓"; position: absolute; left: 0; color: var(--olive); font-weight: 700; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; }
+    th { background: var(--bg); }
+    ol.checklist { padding-left: 1.25rem; }
+    ol.checklist li { margin: 0.75rem 0; }
+    ol.checklist li.blocker { list-style: none; margin-left: -1.25rem; padding-left: 0; }
+    .blocker-tag { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; background: var(--clay); color: #fff; padding: 0.15rem 0.4rem; border-radius: 3px; margin-left: 0.35rem; vertical-align: middle; }
+    .sub { display: block; font-size: 0.9rem; color: var(--muted); margin-top: 0.25rem; }
+    .checklist-divider { font-style: italic; color: var(--muted); margin: 1.5rem 0 0.75rem; }
+    .note-card { background: var(--bg); border: 1px dashed var(--border); border-radius: 6px; padding: 1rem; margin-top: 1rem; }
+    .footer-note { font-size: 0.8rem; color: var(--muted); text-align: center; margin-top: 2rem; }
+    .stat-line { font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="doc-header">
+  <p class="doc-kicker">Plain-Language Audit</p>
+  <h1>WordPress MCP Server with Cursor — Publish Readiness</h1>
+  <dl class="meta-grid">
+    <div><dt>Page</dt><dd><code>cursor-wp-mcp-abilities</code> draft</dd></div>
+    <div><dt>Page job</dt><dd>Show self-hosted operators how to connect Cursor to WordPress via curated abilities and block-based draft publish</dd></div>
+    <div><dt>Date</dt><dd>2026-06-19</dd></div>
+    <div><dt>Compared to</dt><dd>DataForSEO SERP corpus — 8 organic URLs + AI Overview (2026-06-19)</dd></div>
+  </dl>
+</header>
+
+<section>
+  <h2>Scorecard</h2>
+  <p>Each row scores 0–2. Rows 1–2 check brief fidelity; rows 3–6 compare the draft to a <strong>SERP baseline corpus</strong> built from DataForSEO (page-one text + AI Overview).</p>
+  <ul class="score-grid">
+    <li class="score-2">
+      <span class="label">Does the draft deliver what the brief promised?</span>
+      <span class="value">2/2</span>
+      <p class="score-note">All three brief deltas appear in the right sections.</p>
+    </li>
+    <li class="score-2">
+      <span class="label">Are required proof blocks present and usable?</span>
+      <span class="value">2/2</span>
+      <p class="score-note">Architecture diagram, abilities table, and publish checklist included.</p>
+    </li>
+    <li class="score-2">
+      <span class="label">Does the draft cover table-stakes topics page-one already explains?</span>
+      <span class="value">2/2</span>
+      <p class="score-note">Baseline topics in SERP corpus are addressed in draft.</p>
+    </li>
+    <li class="score-2">
+      <span class="label">Does the draft add claims absent from the SERP baseline corpus?</span>
+      <span class="value">2/2</span>
+      <p class="score-note">13 operator markers absent from corpus (rootsandfruit/*, preview gate, smoke scripts).</p>
+    </li>
+    <li class="score-2">
+      <span class="label">Does the draft fit the primary keyword intent?</span>
+      <span class="value">2/2</span>
+      <p class="score-note">Navigational intent: 6 wiring/install signals in draft.</p>
+    </li>
+    <li class="score-2">
+      <span class="label">Are limits and caveats stated plainly?</span>
+      <span class="value">2/2</span>
+      <p class="score-note">No delete, no cache ability, REST escape hatches, preview ≠ publish.</p>
+    </li>
+    <li class="verdict-total">
+      <span class="verdict-score">12/12</span>
+      <span class="badge publish">Publish-ready</span>
+      <p class="verdict-body"><strong>Corpus-backed audit</strong> (<code>brief-draft+serp-corpus</code>). <strong>Strong:</strong> 13 delta wins vs page-one text. <strong>Fix:</strong> Optional <code>mcp.json</code> snippet for copy-paste adopters.</p>
+    </li>
+  </ul>
+  <div class="note-card">
+    <p>Corpus: <code>content/keyword-intel/output/cursor-wp-mcp-abilities/serp/corpus.md</code> · Delta evidence: <code>serp_delta.json</code> · Built via DataForSEO SERP Advanced + On-Page content parsing.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Why this score</h2>
+  <p>This draft wins on information gain because it is not a connect-in-five-minutes tutorial — it documents a least-privilege, block-aware, preview-gated publish pipeline on a real self-hosted site, with named abilities, explicit omissions, and verification steps page-one does not assemble.</p>
+
+  <h3>What page-one already covers</h3>
+  <p>Page-one and AI Overview mostly answer how to connect WordPress MCP: plugins, Application Passwords, broad CRUD, and generic “manage your site from Cursor” framing.</p>
+
+  <h3>What wins on information gain</h3>
+  <ul>
+    <li><strong>Curated least-privilege abilities</strong> — Page-one promotes broad MCP/REST exposure and plugin roundups; the draft documents a bounded <code>rootsandfruit/*</code> surface, permission basis, and explicit omissions (no delete, no cache purge).</li>
+    <li><strong>Guarded publish path</strong> — Competitors stop at connect-and-edit; the draft adds a preview-gated checklist with <code>set-post-author</code>, Breeze purge, and <code>enable-public-preview</code> before <code>publish-post</code>.</li>
+    <li><strong>Block-first body rules</strong> — Generic results say create/update posts; the draft separates <code>blocks-*</code> for body vs <code>update-post</code> for title/excerpt and documents the <code>innerHTML</code> failure mode.</li>
+    <li><strong>Single MCP architecture</strong> — Listicles offer many servers; the draft commits to one Cursor MCP, in-process blocks, and explicit routing rules.</li>
+    <li><strong>Live operator evidence</strong> — Vendor docs and AI summaries lack verifiable solo-operator detail; the draft names smoke scripts, plugin versions, and a real self-hosted stack.</li>
+  </ul>
+
+  <h3>Sample novel claims</h3>
+  <ul>
+    <li>One-person shop on Cloudways with curated abilities—not wide-open REST</li>
+    <li>Split: block work via <code>blocks-*</code>; title/excerpt via <code>update-post</code></li>
+    <li>Explicit omissions: no delete, no cache purge; Breeze purge after byline changes</li>
+  </ul>
+
+  <div class="note-card">
+    <p>Score is corpus-backed and deterministic — not LLM/embeddings. Optional: redacted <code>mcp.json</code> example for copy-paste navigational intent.</p>
+  </div>
+</section>
+
+<section>
+  <h2>SERP delta evidence</h2>
+  <p>Claims and markers in the draft that do <em>not</em> appear in the combined page-one corpus (includes Google AI Overview).</p>
+  <h3>Operator markers absent from corpus</h3>
+  <ul class="keep-list">
+    <li><code>rootsandfruit/*</code> curated abilities surface</li>
+    <li><code>set-post-author</code>, <code>blocks-create-page</code>, <code>enable-public-preview</code></li>
+    <li><code>wordpress-rootsandfruit</code> single MCP server</li>
+    <li><code>innerHTML</code> block rule, Breeze cache purge, smoke scripts</li>
+    <li>Explicit no-delete / no cache-purge ability policy</li>
+  </ul>
+  <h3>High-novelty sentences (sample)</h3>
+  <ul>
+    <li>One-person shop on Cloudways with curated abilities—not wide-open REST</li>
+    <li>“Proof—not faith” verify sequence with <code>audit-mcp-abilities.ps1</code></li>
+    <li>Ship as draft + preview, not straight to publish</li>
+  </ul>
+  <p class="stat-line">Full list in <code>serp_delta.json</code> · 10 high-novelty sentences · 0 baseline gaps</p>
+</section>
+
+<section>
+  <h2>What's working</h2>
+  <p>Do not delete these when revising or converting to blocks:</p>
+  <ul class="keep-list">
+    <li>Single MCP architecture ASCII flow (Cursor → one server → in-process blocks)</li>
+    <li>Curated abilities table with intentional omissions (no delete, no cache purge)</li>
+    <li>Seven-step publish checklist with explicit STOP before <code>publish-post</code></li>
+    <li><code>innerHTML</code> rule and blocks-* vs <code>update-post</code> split</li>
+    <li>Self-hosted vs WordPress.com callout</li>
+    <li>Founder first-person voice with deliberate section bridges</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What's hurting</h2>
+  <p>Assuming page job = teach self-hosted operators a guarded MCP publish workflow on a live site. <strong>No blockers.</strong></p>
+
+  <h3>1. Optional: redacted <code>mcp.json</code> example</h3>
+  <p class="stat-line">Corpus-backed intent fit passed (6 navigational signals), but a copy-paste config block would still help “how to use wordpress mcp server” searchers.</p>
+</section>
+
+<section>
+  <h2>Do this next</h2>
+  <ol class="checklist">
+    <li><strong>Run <code>/rf-article-publish</code> in preview mode.</strong><span class="sub">Convert <a href="draft.md">draft.md</a> → Gutenberg blocks via <code>blocks-create-page</code> / <code>blocks-insert</code> with <code>innerHTML</code>.</span></li>
+    <li><strong>Confirm live ability names before block assembly.</strong><span class="sub">Run <code>audit-mcp-abilities.ps1 -ExpectBlocks</code> from <code>agent/</code>; expect <code>set-post-author</code> on v1.5.1+.</span></li>
+    <li><strong>Set author, enable public preview, STOP.</strong><span class="sub"><code>set-post-author</code> → purge Breeze → <code>enable-public-preview</code> → share preview URL for review. Do not <code>publish-post</code> until explicit approval.</span></li>
+  </ol>
+  <p class="checklist-divider">Optional polish after preview looks good on site.</p>
+  <ol class="checklist continue" start="4">
+    <li><strong>Add redacted <code>mcp.json</code> example</strong> if preview readers ask for copy-paste wiring.</li>
+  </ol>
+  <div class="note-card">
+    <p>Reconcile with <a href="brief.html"><strong>brief.html</strong></a>. Script score: <strong>12/12</strong>. Next pipeline step: <strong>/rf-article-publish</strong> (preview STOP—not live publish).</p>
+  </div>
+</section>
+
+<p class="footer-note">Roots &amp; Fruit Audit · cursor-wp-mcp-abilities · 2026-06-19</p>
+</div>
+</body>
+</html>

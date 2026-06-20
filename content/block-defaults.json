@@ -1,0 +1,17 @@
+{
+  "code": {
+    "block_name": "core/code",
+    "language_map": {
+      "powershell": "powershell",
+      "ps1": "powershell",
+      "bash": "bash",
+      "sh": "bash",
+      "shell": "bash",
+      "": ""
+    }
+  },
+  "table": {
+    "className": "is-style-stripes",
+    "figure_class": "wp-block-table is-style-stripes"
+  }
+}

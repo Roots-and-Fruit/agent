@@ -1,0 +1,17 @@
+{
+  "redefinable-internals": [
+    "file_exists",
+    "is_readable",
+    "is_writable",
+    "time",
+    "gmdate",
+    "filesize",
+    "mime_content_type",
+    "header",
+    "fopen",
+    "ob_get_level",
+    "headers_sent",
+    "file_get_contents",
+    "file_put_contents"
+  ]
+}

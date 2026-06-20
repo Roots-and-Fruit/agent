@@ -1,0 +1,97 @@
+{
+  "audit_mode": "draft-article",
+  "scoring_mode": "brief-draft+serp-corpus",
+  "page_intent": "cursor-wp-mcp-abilities",
+  "page_intent_note": "Draft audit for cursor-wp-mcp-abilities",
+  "target_url": "",
+  "date": "2026-06-19",
+  "compared_against": "SERP corpus (corpus_manifest.json) + brief deltas",
+  "recommendation": "publish-ready",
+  "recommendation_plain": "Draft meets publish threshold.",
+  "total_score": 12,
+  "max_score": 12,
+  "scores": {
+    "Delta Fidelity": 2,
+    "Artifact Realization": 2,
+    "Baseline Coverage": 2,
+    "SERP Novelty": 2,
+    "Intent Fit": 2,
+    "Risk Honesty": 2
+  },
+  "score_notes": {
+    "Delta Fidelity": "Draft reflects 3/3 delta titles.",
+    "Artifact Realization": "Required artifacts represented (3/3).",
+    "Baseline Coverage": "Draft covers baseline topics present in SERP corpus.",
+    "SERP Novelty": "13 delta win(s) vs corpus; 10 high-novelty sentences.",
+    "Intent Fit": "Navigational intent served (6 wiring/install signals).",
+    "Risk Honesty": "Limits and caveats appear stated."
+  },
+  "serp_delta_summary": {
+    "novel_claim_count": 10,
+    "delta_win_count": 13,
+    "baseline_gap_count": 0,
+    "recommended_fixes": []
+  },
+  "ig_why_summary": {
+    "one_liner": "This draft wins on information gain because it is not a connect-in-five-minutes tutorial \u2014 it documents a least-privilege, block-aware, preview-gated publish pipeline on a real self-hosted site, with named abilities, explicit omissions, and verification steps page-one does not assemble.",
+    "headline": "12/12 \u2014 publish ready",
+    "score_rationale": [
+      "Delta Fidelity: Draft reflects 3/3 delta titles.",
+      "Artifact Realization: Required artifacts represented (3/3).",
+      "Baseline Coverage: Draft covers baseline topics present in SERP corpus.",
+      "SERP Novelty: 13 delta win(s) vs corpus; 10 high-novelty sentences.",
+      "Intent Fit: Navigational intent served (6 wiring/install signals).",
+      "Risk Honesty: Limits and caveats appear stated."
+    ],
+    "wins_vs_serp": [
+      {
+        "title": "Curated least-privilege abilities",
+        "body": "Page-one promotes broad MCP/REST exposure and plugin roundups; the draft documents a bounded rootsandfruit/* surface, permission basis, and explicit omissions (no delete, no cache purge)."
+      },
+      {
+        "title": "Guarded publish path",
+        "body": "Competitors stop at connect-and-edit; the draft adds a preview-gated checklist with set-post-author, Breeze purge, and enable-public-preview before publish-post."
+      },
+      {
+        "title": "Block-first body rules",
+        "body": "Generic results say create/update posts; the draft separates blocks-* for body vs update-post for title/excerpt and documents the innerHTML failure mode."
+      },
+      {
+        "title": "Single MCP architecture",
+        "body": "Listicles offer many servers; the draft commits to one Cursor MCP, in-process blocks, and explicit routing rules."
+      },
+      {
+        "title": "Live operator evidence",
+        "body": "Vendor docs and AI summaries lack verifiable solo-operator detail; the draft names smoke scripts, plugin versions, and a real self-hosted stack."
+      }
+    ],
+    "page_one_contrast": "A **WordPress MCP (Model Context Protocol) Server** `bridges AI assistants (like Claude, Cursor, and VS Code) with your WordPress website so you can manage content, posts, pages, and themes directly via natural language`.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abiliti",
+    "notable_novel_claims": [
+      "I run [rootsandfruit.com](https://rootsandfruit.com/) as a one-person shop: self-hosted WordPress on Cloudways, Kadence, Breeze cache.",
+      "From there I split responsibilities on purpose: block work goes through `rootsandfruit/blocks-*`; title and excerpt go through `rootsandfruit/update-post`.",
+      "Generic MCP setups often mirror large parts of the REST API.",
+      "**What I deliberately left out:** post delete, trash, cache purge.",
+      "Breeze cache clears stay manual\u2014I purge after byline changes so logged-out preview matches what I expect."
+    ],
+    "delta_win_count": 13,
+    "caveats": [
+      "Score is corpus-backed and deterministic \u2014 not LLM/embeddings. Optional: mcp.json example for copy-paste navigational intent."
+    ]
+  },
+  "keep_these": [
+    "rootsandfruit/",
+    "set-post-author",
+    "blocks-create-page",
+    "enable-public-preview"
+  ],
+  "fix_first": [],
+  "blockers": [],
+  "next_steps": [
+    "Run /rf-article-publish in preview mode"
+  ],
+  "rewrite_target_score": 10,
+  "brief_path": "content\\articles\\cursor-wp-mcp-abilities\\brief.html",
+  "draft_path": "content\\articles\\cursor-wp-mcp-abilities\\draft.md",
+  "corpus_path": "content\\keyword-intel\\output\\cursor-wp-mcp-abilities\\serp\\corpus.md",
+  "serp_delta_path": "content\\articles\\cursor-wp-mcp-abilities\\serp_delta.json"
+}

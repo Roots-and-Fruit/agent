@@ -1,0 +1,11 @@
+{
+  "keyword_slug": "example-explainer",
+  "primary_keyword": "wordpress content workflow",
+  "generated_at": "2026-06-19",
+  "mode": "example",
+  "artifact_files": {
+    "top_n": "scored/top_n.json",
+    "report": "reports/baseline-delta.md"
+  },
+  "notes": "Canonical example artifacts for skill development — not live SERP data."
+}

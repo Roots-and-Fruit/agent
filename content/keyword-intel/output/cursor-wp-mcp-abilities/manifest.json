@@ -1,0 +1,20 @@
+{
+  "keyword_slug": "cursor-wp-mcp-abilities",
+  "primary_keyword": "wordpress mcp server",
+  "generated_at": "2026-06-19",
+  "mode": "full",
+  "success_intent": "traffic",
+  "target_url": "https://rootsandfruit.com/",
+  "dataforseo_tools_used": [
+    "serp_organic_live_advanced",
+    "dataforseo_labs_google_keyword_overview",
+    "dataforseo_labs_google_related_keywords"
+  ],
+  "artifact_files": {
+    "top_n": "scored/top_n.json",
+    "report": "reports/baseline-delta.md",
+    "serp_corpus": "serp/corpus.md",
+    "serp_manifest": "serp/corpus_manifest.json"
+  },
+  "notes": "Primary chosen for measurable volume; article angle is Cursor + MCP Adapter + custom Abilities plugin on self-hosted WordPress."
+}

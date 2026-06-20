@@ -1,0 +1,96 @@
+<?php
+/**
+ * Plugin Name: TrustedLogin Client Test
+ * phpcs:disable
+ */
+
+/**
+ * Autoloader for the TrustedLogin Client
+ *
+ * @param string $class The fully-qualified class name.
+ * @see https://www.php-fig.org/psr/psr-4/examples/
+ * @return void
+ */
+spl_autoload_register(
+	function ( $class ) {
+		$prefix   = 'GravityKit\\BlockMCP\\Foundation\\ThirdParty\\TrustedLogin\\';
+		$base_dir = __DIR__ . '/src/';
+		$len      = strlen( $prefix );
+		if ( strncmp( $prefix, $class, $len ) !== 0 ) {
+			return;
+		}
+		$relative_class = substr( $class, $len );
+		$file           = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
+		if ( file_exists( $file ) ) {
+			require $file;
+		}
+	}
+);
+/**
+ * Configuration for TrustedLogin Client
+ *
+ * @see https://docs.trustedlogin.com/Client/configuration
+ */
+$public_key = '90bd9d918670ea15';
+$config     = array(
+	'auth'    => array(
+		'api_key' => $public_key,
+	),
+	// In the e2e Docker stack, read the in-stack vendor URL from the
+	// shared fixture so both the test runner and the client-side config
+	// stay in sync. Outside e2e, fall back to documentation placeholders.
+	'vendor'  => ( static function () {
+		$fixture      = __DIR__ . '/tests/e2e/fixtures/.cache-vendor-state.json';
+		$vendor_url   = 'https://example.com';
+		$support_url  = 'https://help.example.com';
+		if ( is_readable( $fixture ) ) {
+			$state = json_decode( (string) file_get_contents( $fixture ), true );
+			if ( is_array( $state ) && ! empty( $state['vendor_url'] ) ) {
+				$vendor_url  = (string) $state['vendor_url'];
+				$support_url = rtrim( $vendor_url, '/' ) . '/support';
+			}
+		}
+		return array(
+			'namespace'   => 'pro-block-builder',
+			'title'       => 'Pro Block Builder',
+			'email'       => 'support@example.com',
+			'website'     => $vendor_url,
+			'support_url' => $support_url,
+		);
+	} )(),
+	'role'    => 'editor',
+	'caps'    => array(
+		'add' => array(
+			'gf_full_access' => 'Support will need to see and edit the forms, entries, and Gravity Forms settings on your site.',
+		),
+	),
+	'webhook' => array(
+		'url'           => 'https://example.com/webhook',
+		'create_ticket' => true,
+		'debug_data'    => true,
+	),
+);
+$config     = new \GravityKit\BlockMCP\Foundation\ThirdParty\TrustedLogin\Config( $config );
+try {
+	new \GravityKit\BlockMCP\Foundation\ThirdParty\TrustedLogin\Client(
+		$config
+	);
+} catch ( \Exception $exception ) {
+	error_log( $exception->getMessage() );
+
+	add_action(
+		'admin_notices',
+		function () use ( $exception ) {
+
+			if ( ! current_user_can( 'manage_options' ) ) {
+				return;
+			}
+
+			?>
+		<div class="notice notice-error">
+			<p><?php echo $exception->getMessage(); ?></p>
+		</div>
+			<?php
+		}
+	);
+}

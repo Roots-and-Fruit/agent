@@ -1,0 +1,1072 @@
+{
+  "version": "0.1.20260610",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "11.4728 sec.",
+  "cost": 0.004,
+  "tasks_count": 1,
+  "tasks_error": 0,
+  "tasks": [
+    {
+      "id": "06192056-1293-0139-0000-0d9b0f17772b",
+      "status_code": 20000,
+      "status_message": "Ok.",
+      "time": "11.3268 sec.",
+      "cost": 0.004,
+      "result_count": 1,
+      "path": [
+        "v3",
+        "serp",
+        "google",
+        "organic",
+        "live",
+        "advanced"
+      ],
+      "data": {
+        "api": "serp",
+        "function": "live",
+        "se": "google",
+        "se_type": "organic",
+        "keyword": "wordpress mcp server",
+        "location_code": 2840,
+        "language_code": "en",
+        "depth": 10,
+        "load_async_ai_overview": true,
+        "device": "desktop",
+        "os": "windows"
+      },
+      "result": [
+        {
+          "keyword": "wordpress mcp server",
+          "type": "organic",
+          "se_domain": "google.com",
+          "location_code": 2840,
+          "language_code": "en",
+          "check_url": "https://www.google.com/search?q=wordpress%20mcp%20server&hl=en&gl=US&ie=UTF-8&uule=w+CAIQIFISCQs2MuSEtepUEUK33kOSuTsc",
+          "datetime": "2026-06-19 17:56:49 +00:00",
+          "spell": null,
+          "refinement_chips": null,
+          "item_types": [
+            "ai_overview",
+            "organic",
+            "video",
+            "perspectives",
+            "related_searches"
+          ],
+          "se_results_count": 131,
+          "pages_count": 1,
+          "items_count": 12,
+          "items": [
+            {
+              "type": "organic",
+              "rank_group": 1,
+              "rank_absolute": 1,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+              "domain": "github.com",
+              "title": "GitHub - Automattic/wordpress-mcp: ...",
+              "url": "https://github.com/Automattic/wordpress-mcp",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "https://github.com \u203a Automattic \u203a wordpress-mcp",
+              "website_name": "GitHub",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "Jan 19, 2026 \u2014 A comprehensive WordPress plugin that implements the Model Context Protocol (MCP) to expose WordPress functionality through standardized interfaces. Read more",
+              "pre_snippet": "01/19/2026 00:00:00",
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "implements the Model Context Protocol (MCP"
+              ],
+              "links": null,
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": "2026-01-19 00:00:00 +00:00",
+              "rectangle": null
+            },
+            {
+              "type": "organic",
+              "rank_group": 2,
+              "rank_absolute": 2,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]",
+              "domain": "developer.wordpress.org",
+              "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+              "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "https://developer.wordpress.org \u203a news \u203a 2026/02 \u203a fro...",
+              "website_name": "WordPress Developer Resources",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "Feb 4, 2026 \u2014 To add MCP servers to Claude Desktop, navigate to the Developer tab (Claude \u2192 Settings \u2192 Developer). Under Local MCP servers click Edit config. Read more",
+              "pre_snippet": "02/04/2026 00:00:00",
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "MCP servers"
+              ],
+              "links": null,
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": "2026-02-04 00:00:00 +00:00",
+              "rectangle": null
+            },
+            {
+              "type": "organic",
+              "rank_group": 3,
+              "rank_absolute": 3,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]",
+              "domain": "www.reddit.com",
+              "title": "Claude takes over WordPress with MCP",
+              "url": "https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "120+ comments  \u00b7  1 year ago",
+              "website_name": "Reddit\u00a0\u00b7\u00a0r/Wordpress",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "\"A WordPress plugin that implements the Model Context Protocol (MCP) to expose WordPress functionality through a standardized interface. This\u00a0... Read more",
+              "pre_snippet": null,
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "WordPress",
+                "MCP"
+              ],
+              "links": [
+                {
+                  "type": "link_element",
+                  "title": "WordPress MCP Server",
+                  "description": null,
+                  "url": "https://www.reddit.com/r/Wordpress/comments/1ho01wt/wordpress_mcp_server/",
+                  "domain": "www.reddit.com"
+                },
+                {
+                  "type": "link_element",
+                  "title": "The Most Comprehensive WordPress MCP Server",
+                  "description": null,
+                  "url": "https://www.reddit.com/r/Wordpress/comments/1mb0nrq/the_most_comprehensive_wordpress_mcp_server_now/",
+                  "domain": "www.reddit.com"
+                },
+                {
+                  "type": "link_element",
+                  "title": "More results from www.reddit.com",
+                  "description": null,
+                  "url": "https://www.google.com/search?q=wordpress+mcp+server+site:www.reddit.com&sca_esv=0d642a333c7f7a40&hl=en&gl=US&sa=X&ved=2ahUKEwivkvKe8JOVAxWTQEEAHe6KOhUQrQIoAnoECCQQAw",
+                  "domain": "www.google.com"
+                }
+              ],
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": null,
+              "rectangle": null
+            },
+            {
+              "type": "ai_overview",
+              "rank_group": 1,
+              "rank_absolute": 4,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[6]/div[1]/div[1]",
+              "asynchronous_ai_overview": true,
+              "markdown": "A **WordPress MCP (Model Context Protocol) Server** `bridges AI assistants (like Claude, Cursor, and VS Code) with your WordPress website so you can manage content, posts, pages, and themes directly via natural language`.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://mcpservers.org/servers/kungtekno/wp-mcp)By using the official [WordPress MCP Adapter](https://github.com/wordpress/mcp-adapter) developed under the official AI Building Blocks initiative, your site\u2019s native capabilities are translated into standard MCP tools, resources, and prompts.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://github.com/wordpress/mcp-adapter)\n---\n\nCore Features\n\n- **Zero-Interface Admin** : Create, read, update, or delete posts and pages entirely via your AI client without logging into `wp-admin`.[](https://www.reddit.com/r/mcp/comments/1sbcwx7/i_built_a_wordpress_mcp_server_and_its_changed/) [[1]](https://www.reddit.com/r/mcp/comments/1sbcwx7/i_built_a_wordpress_mcp_server_and_its_changed/)[[2]](https://mcpservers.org/servers/kungtekno/wp-mcp)[[3]](https://instawp.com/wordpress-mcp/)[[4]](https://instawp.com/best-wordpress-mcp-servers-compared/)[[5]](https://instawp.com/wordpress-mcp-server/)\n- **Media Operations** : Upload and manage media assets asynchronously using AI automation.[](https://mcpservers.org/servers/kungtekno/wp-mcp) [[1]](https://mcpservers.org/servers/kungtekno/wp-mcp)\n- **System Introspection** : Inspect active plugins, switch themes, and perform diagnostic health checks using the official WordPress Abilities API.[](https://wordpress.org/plugins/royal-mcp/) [[1]](https://wordpress.org/plugins/royal-mcp/)[[2]](https://mcpservers.org/servers/kungtekno/wp-mcp)\n- **Granular Security** : Leverages scoped WordPress **Application Passwords** , restricting the AI agent strictly to the user role permissions you assign.[](https://make.wordpress.org/ai/2025/07/17/mcp-adapter/) [[1]](https://make.wordpress.org/ai/2025/07/17/mcp-adapter/)[[2]](https://bionicwp.com/wordpress-mcp)\n\n\n---\n\nPopular Server Implementations If you are choosing an implementation for your workspace, consider these distinct solutions:\n\n- **Official WordPress MCP Adapter** : Built by Automattic/WordPress contributors. It acts as a core bridge translating WordPress capabilities into standardized MCP primitives. Requires the companion proxy package `@automattic/mcp-wordpress-remote` to connect local apps via STDIO.[](https://github.com/Automattic/wordpress-mcp) [[1]](https://github.com/Automattic/wordpress-mcp)[[2]](https://www.youtube.com/watch?v=GRJYGLTpQLQ)[[3]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[4]](https://developer.woocommerce.com/docs/features/mcp/)[[5]](https://github.com/Automattic/mcp-wordpress-remote)\n- **[Royal MCP Plugin](https://wordpress.org/plugins/royal-mcp/)** : A security-first, production-ready solution available directly in the plugin directory. It features pre-configured OAuth 2.0, API key authentication, per-IP rate limiting, and 67 built-in tools that natively support core systems alongside popular plugins like WooCommerce, Advanced Custom Fields (ACF), and Elementor.[](https://wordpress.org/plugins/royal-mcp/) [[1]](https://wordpress.org/plugins/royal-mcp/)\n- **[AI Engine Plugin](https://wordpress.org/plugins/ai-engine/)** : A popular third-party plugin by Jordi Meow that natively integrates an MCP bridge, allowing complete creation of site structure, posts, tags, and AI-generated imagery through continuous prompt interactions.[](https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/) [[1]](https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/)\n\n\n---\n\nQuick Setup Blueprint Connecting an AI client like Claude Desktop to your local or remote WordPress environment relies on standard JSON configurations.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)1. Generate Your Credentials\n\n1. Log into your WordPress site dashboard.\n2. Navigate to **Users** \u2192 **Profile**.\n3. Scroll to **Application Passwords** , type a name (e.g., `Claude-MCP` ), and click **Add New**.\n4. Copy the generated 24-character password string.[](https://github.com/deus-h/claudeus-wp-mcp) [[1]](https://github.com/deus-h/claudeus-wp-mcp)[[2]](https://www.cloudways.com/blog/manage-multiple-wordpress-sites/)\n\n2. Configure Your AI Client Add the server configuration block to your application's settings file (e.g., `claude_desktop_config.json` for Claude Desktop or `mcp.json` for Cursor) using the Automattic proxy engine:[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/)json```\n{\n  \"mcpServers\": {\n    \"wordpress-mcp-server\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@automattic/mcp-wordpress-remote@^0.2\"],\n      \"env\": {\n        \"WP_API_URL\": \"https://your-site-domain.com\",\n        \"WP_API_USERNAME\": \"your-admin-username\",\n        \"WP_API_PASSWORD\": \"xxxx xxxx xxxx xxxx xxxx xxxx\"\n      }\n    }\n  }\n}\n``` \n*(Note: Replace `WP_API_URL`, `WP_API_USERNAME` , and `WP_API_PASSWORD` with your setup's specific credentials).* [](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/) [[1]](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/)[[2]](https://github.com/stefans71/wordpress-mcp-server)3. Initialize and Run Restart your AI tool. You will see a \ud83d\udd28 hammer icon or server confirmation message indicating that your agent has successfully discovered your custom WordPress tools and is ready to accept site commands.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://github.com/deus-h/claudeus-wp-mcp)",
+              "items": [
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "A WordPress MCP (Model Context Protocol) Server bridges AI assistants (like Claude, Cursor, and VS Code) with your WordPress website so you can manage content, posts, pages, and themes directly via natural language. WordPress Developer Resources +1",
+                  "markdown": "A **WordPress MCP (Model Context Protocol) Server** `bridges AI assistants (like Claude, Cursor, and VS Code) with your WordPress website so you can manage content, posts, pages, and themes directly via natural language`.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://mcpservers.org/servers/kungtekno/wp-mcp)",
+                  "links": null,
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+                      "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+                      "text": "What is the WordPress MCP Adapter? The WordPress MCP Adapter is an official package in the AI Building Blocks for WordPress initia..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "Awesome MCP Servers",
+                      "domain": "mcpservers.org",
+                      "url": "https://mcpservers.org/servers/kungtekno/wp-mcp",
+                      "title": "WordPress MCP Server",
+                      "text": "WordPress MCP Server. A secure bridge between AI assistants and WordPress, enabling site management and content operations through..."
+                    }
+                  ]
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "By using the official WordPress MCP Adapter developed under the official AI Building Blocks initiative, your site\u2019s native capabilities are translated into standard MCP tools, resources, and prompts. WordPress Developer Resources +1",
+                  "markdown": "By using the official [WordPress MCP Adapter](https://github.com/wordpress/mcp-adapter) developed under the official AI Building Blocks initiative, your site\u2019s native capabilities are translated into standard MCP tools, resources, and prompts.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://github.com/wordpress/mcp-adapter)",
+                  "links": [
+                    {
+                      "type": "link_element",
+                      "title": "WordPress MCP Adapter",
+                      "description": null,
+                      "url": "https://github.com/wordpress/mcp-adapter",
+                      "domain": "github.com"
+                    }
+                  ],
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+                      "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+                      "text": "What is the WordPress MCP Adapter? The WordPress MCP Adapter is an official package in the AI Building Blocks for WordPress initia..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "GitHub",
+                      "domain": "github.com",
+                      "url": "https://github.com/wordpress/mcp-adapter",
+                      "title": "WordPress/mcp-adapter: An MCP adapter that ... - GitHub",
+                      "text": "Features * Core Functionality. Ability-to-MCP Conversion: Automatically converts WordPress abilities into MCP tools, resources, an..."
+                    }
+                  ]
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "Zero-Interface Admin : Create, read, update, or delete posts and pages entirely via your AI client without logging into wp-admin. Media Operations : Upload and manage media assets asynchronously using AI automation. System Introspection : Inspect active plugins, switch themes, and perform diagnostic health checks using the official WordPress Abilities API. Granular Security : Leverages scoped WordPress Application Passwords, restricting the AI agent strictly to the user role permissions you assign.",
+                  "markdown": "- **Zero-Interface Admin** : Create, read, update, or delete posts and pages entirely via your AI client without logging into `wp-admin`.[](https://www.reddit.com/r/mcp/comments/1sbcwx7/i_built_a_wordpress_mcp_server_and_its_changed/) [[1]](https://www.reddit.com/r/mcp/comments/1sbcwx7/i_built_a_wordpress_mcp_server_and_its_changed/)[[2]](https://mcpservers.org/servers/kungtekno/wp-mcp)[[3]](https://instawp.com/wordpress-mcp/)[[4]](https://instawp.com/best-wordpress-mcp-servers-compared/)[[5]](https://instawp.com/wordpress-mcp-server/)\n- **Media Operations** : Upload and manage media assets asynchronously using AI automation.[](https://mcpservers.org/servers/kungtekno/wp-mcp) [[1]](https://mcpservers.org/servers/kungtekno/wp-mcp)\n- **System Introspection** : Inspect active plugins, switch themes, and perform diagnostic health checks using the official WordPress Abilities API.[](https://wordpress.org/plugins/royal-mcp/) [[1]](https://wordpress.org/plugins/royal-mcp/)[[2]](https://mcpservers.org/servers/kungtekno/wp-mcp)\n- **Granular Security** : Leverages scoped WordPress **Application Passwords** , restricting the AI agent strictly to the user role permissions you assign.[](https://make.wordpress.org/ai/2025/07/17/mcp-adapter/) [[1]](https://make.wordpress.org/ai/2025/07/17/mcp-adapter/)[[2]](https://bionicwp.com/wordpress-mcp)",
+                  "links": null,
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "Reddit",
+                      "domain": "www.reddit.com",
+                      "url": "https://www.reddit.com/r/mcp/comments/1sbcwx7/i_built_a_wordpress_mcp_server_and_its_changed/",
+                      "title": "I built a WordPress MCP server and it's changed how I manage my ...",
+                      "text": "Here's a real example of what a morning looks like now. I tell Claude I want to clear out my draft queue and schedule three posts ..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "Awesome MCP Servers",
+                      "domain": "mcpservers.org",
+                      "url": "https://mcpservers.org/servers/kungtekno/wp-mcp",
+                      "title": "WordPress MCP Server",
+                      "text": "WordPress MCP Server. A secure bridge between AI assistants and WordPress, enabling site management and content operations through..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "InstaWP",
+                      "domain": "instawp.com",
+                      "url": "https://instawp.com/wordpress-mcp/",
+                      "title": "What is WordPress MCP Server and How to Use it: Guide for Agencies",
+                      "text": "It ( A WordPress MCP (Model Context Protocol) Server ) allows AI tools to read, write, and manage WordPress content, users, and si..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "InstaWP",
+                      "domain": "instawp.com",
+                      "url": "https://instawp.com/best-wordpress-mcp-servers-compared/",
+                      "title": "10 Best WordPress MCP Servers Compared for AI Workflows in [year]",
+                      "text": "This MCP server for WordPress turns your CMS into an AI-operable workspace. Developers can skip the admin UI and instruct agents t..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "InstaWP",
+                      "domain": "instawp.com",
+                      "url": "https://instawp.com/wordpress-mcp-server/",
+                      "title": "Talk to your WordPress Site with InstaWP\u2019s MCP Server",
+                      "text": "Real-World Use Cases for the WordPress MCP Server Onboard or off-board staff in seconds, even from a mobile AI chat. Publish, upda..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress.org",
+                      "domain": "wordpress.org",
+                      "url": "https://wordpress.org/plugins/royal-mcp/",
+                      "title": "Royal MCP \u2013 Secure AI Connector for Claude, ChatGPT & Gemini",
+                      "text": "Description. ... Your browser can't play this video. ... An error occurred. Try watching this video on www.youtube.com, or enable ..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "Make WordPress",
+                      "domain": "make.wordpress.org",
+                      "url": "https://make.wordpress.org/ai/2025/07/17/mcp-adapter/",
+                      "title": "MCP Adapter - Make WordPress",
+                      "text": "Introduction. Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs. In Word..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "BionicWP",
+                      "domain": "bionicwp.com",
+                      "url": "https://bionicwp.com/wordpress-mcp",
+                      "title": "WordPress MCP \u2014 Let AI Manage Your WordPress Site",
+                      "text": "What is WordPress MCP? WordPress MCP gives AI agents secure, authenticated access to your WordPress site using the Model Context P..."
+                    }
+                  ]
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "If you are choosing an implementation for your workspace, consider these distinct solutions:",
+                  "markdown": "If you are choosing an implementation for your workspace, consider these distinct solutions:",
+                  "links": null,
+                  "images": null,
+                  "references": null
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "Official WordPress MCP Adapter : Built by Automattic/WordPress contributors. It acts as a core bridge translating WordPress capabilities into standardized MCP primitives. Requires the companion proxy package @automattic/mcp-wordpress-remote to connect local apps via STDIO. WordPress MCP Adapter @automattic/mcp-wordpress-remote Royal MCP Plugin : A security-first, production-ready solution available directly in the plugin directory. It features pre-configured OAuth 2.0, API key authentication, per-IP rate limiting, and 67 built-in tools that natively support core systems alongside popular plugins like WooCommerce, Advanced Custom Fields (ACF), and Elementor. AI Engine Plugin : A popular third-party plugin by Jordi Meow that natively integrates an MCP bridge, allowing complete creation of site structure, posts, tags, and AI-generated imagery through continuous prompt interactions.",
+                  "markdown": "- **Official WordPress MCP Adapter** : Built by Automattic/WordPress contributors. It acts as a core bridge translating WordPress capabilities into standardized MCP primitives. Requires the companion proxy package `@automattic/mcp-wordpress-remote` to connect local apps via STDIO.[](https://github.com/Automattic/wordpress-mcp) [[1]](https://github.com/Automattic/wordpress-mcp)[[2]](https://www.youtube.com/watch?v=GRJYGLTpQLQ)[[3]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[4]](https://developer.woocommerce.com/docs/features/mcp/)[[5]](https://github.com/Automattic/mcp-wordpress-remote)\n- **[Royal MCP Plugin](https://wordpress.org/plugins/royal-mcp/)** : A security-first, production-ready solution available directly in the plugin directory. It features pre-configured OAuth 2.0, API key authentication, per-IP rate limiting, and 67 built-in tools that natively support core systems alongside popular plugins like WooCommerce, Advanced Custom Fields (ACF), and Elementor.[](https://wordpress.org/plugins/royal-mcp/) [[1]](https://wordpress.org/plugins/royal-mcp/)\n- **[AI Engine Plugin](https://wordpress.org/plugins/ai-engine/)** : A popular third-party plugin by Jordi Meow that natively integrates an MCP bridge, allowing complete creation of site structure, posts, tags, and AI-generated imagery through continuous prompt interactions.[](https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/) [[1]](https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/)",
+                  "links": [
+                    {
+                      "type": "link_element",
+                      "title": "Royal MCP Plugin",
+                      "description": null,
+                      "url": "https://wordpress.org/plugins/royal-mcp/",
+                      "domain": "wordpress.org"
+                    },
+                    {
+                      "type": "link_element",
+                      "title": "AI Engine Plugin",
+                      "description": null,
+                      "url": "https://wordpress.org/plugins/ai-engine/",
+                      "domain": "wordpress.org"
+                    }
+                  ],
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "GitHub",
+                      "domain": "github.com",
+                      "url": "https://github.com/Automattic/wordpress-mcp",
+                      "title": "Automattic/wordpress-mcp: WordPress MCP \u2014 This ... - GitHub",
+                      "text": "WordPress MCP. A comprehensive WordPress plugin that implements the Model Context Protocol (MCP) to expose WordPress functionality..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "YouTube",
+                      "domain": "www.youtube.com",
+                      "url": "https://www.youtube.com/watch?v=GRJYGLTpQLQ",
+                      "title": "WordPress Studio + MCP: A Better AI Workflow| WordPress.com",
+                      "text": "recently I discovered an open-source WordPress Studio MCP server that's going to completely change how you build WordPress sites w..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+                      "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+                      "text": "What is the WordPress MCP Adapter? The WordPress MCP Adapter is an official package in the AI Building Blocks for WordPress initia..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WooCommerce",
+                      "domain": "developer.woocommerce.com",
+                      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+                      "title": "Model Context Protocol (MCP) Integration",
+                      "text": "MCP Clients (like Claude Code) communicate using the MCP protocol over stdio/JSON-RPC; Local Proxy ( @automattic/mcp-wordpress-rem..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "GitHub",
+                      "domain": "github.com",
+                      "url": "https://github.com/Automattic/mcp-wordpress-remote",
+                      "title": "Automattic/mcp-wordpress-remote - GitHub",
+                      "text": "WordPress MCP Plugin Install the MCP Adapter plugin on your WordPress site. Once active, it registers a default MCP server at /wp-"
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress.org",
+                      "domain": "wordpress.org",
+                      "url": "https://wordpress.org/plugins/royal-mcp/",
+                      "title": "Royal MCP \u2013 Secure AI Connector for Claude, ChatGPT & Gemini",
+                      "text": "Description. ... Your browser can't play this video. ... An error occurred. Try watching this video on www.youtube.com, or enable ..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "Reddit",
+                      "domain": "www.reddit.com",
+                      "url": "https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/",
+                      "title": "Claude takes over WordPress with MCP - Reddit",
+                      "text": "TigrouMeow. Award this post 3 Awards. Claude takes over WordPress with MCP. Development. Just wanted to share that finally, we can..."
+                    }
+                  ]
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "Connecting an AI client like Claude Desktop to your local or remote WordPress environment relies on standard JSON configurations. WordPress Developer Resources",
+                  "markdown": "Connecting an AI client like Claude Desktop to your local or remote WordPress environment relies on standard JSON configurations.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)",
+                  "links": null,
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+                      "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+                      "text": "What is the WordPress MCP Adapter? The WordPress MCP Adapter is an official package in the AI Building Blocks for WordPress initia..."
+                    }
+                  ]
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "Add the server configuration block to your application's settings file (e.g., claude_desktop_config.json for Claude Desktop or mcp.json for Cursor) using the Automattic proxy engine: WordPress Developer Resources +1",
+                  "markdown": "Add the server configuration block to your application's settings file (e.g., `claude_desktop_config.json` for Claude Desktop or `mcp.json` for Cursor) using the Automattic proxy engine:[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/)",
+                  "links": null,
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+                      "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+                      "text": "What is the WordPress MCP Adapter? The WordPress MCP Adapter is an official package in the AI Building Blocks for WordPress initia..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/",
+                      "title": "Using the WordPress.org MCP Server \u2013 Plugin Handbook",
+                      "text": "In this article. ... What is MCP? ... WordPress.org provides an MCP (Model Context Protocol) server that lets AI-powered developme..."
+                    }
+                  ]
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "(Note: Replace WP_API_URL, WP_API_USERNAME, and WP_API_PASSWORD with your setup's specific credentials). WordPress Developer Resources +1",
+                  "markdown": "*(Note: Replace `WP_API_URL`, `WP_API_USERNAME` , and `WP_API_PASSWORD` with your setup's specific credentials).* [](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/) [[1]](https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/)[[2]](https://github.com/stefans71/wordpress-mcp-server)",
+                  "links": null,
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/",
+                      "title": "Using the WordPress.org MCP Server \u2013 Plugin Handbook",
+                      "text": "In this article. ... What is MCP? ... WordPress.org provides an MCP (Model Context Protocol) server that lets AI-powered developme..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "GitHub",
+                      "domain": "github.com",
+                      "url": "https://github.com/stefans71/wordpress-mcp-server",
+                      "title": "stefans71/wordpress-mcp-server - GitHub",
+                      "text": "Add the server to your MCP settings file with environment variables for WordPress credentials: * { \"mcpServers\": { \"wordpress\": { ..."
+                    }
+                  ]
+                },
+                {
+                  "type": "ai_overview_element",
+                  "position": "left",
+                  "title": null,
+                  "text": "Restart your AI tool. You will see a \ud83d\udd28 hammer icon or server confirmation message indicating that your agent has successfully discovered your custom WordPress tools and is ready to accept site commands. WordPress Developer Resources +1",
+                  "markdown": "Restart your AI tool. You will see a \ud83d\udd28 hammer icon or server confirmation message indicating that your agent has successfully discovered your custom WordPress tools and is ready to accept site commands.[](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/) [[1]](https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/)[[2]](https://github.com/deus-h/claudeus-wp-mcp)",
+                  "links": null,
+                  "images": null,
+                  "references": [
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "WordPress Developer Resources",
+                      "domain": "developer.wordpress.org",
+                      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+                      "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+                      "text": "What is the WordPress MCP Adapter? The WordPress MCP Adapter is an official package in the AI Building Blocks for WordPress initia..."
+                    },
+                    {
+                      "type": "ai_overview_reference",
+                      "position": "left",
+                      "source": "GitHub",
+                      "domain": "github.com",
+                      "url": "https://github.com/deus-h/claudeus-wp-mcp",
+                      "title": "deus-h/claudeus-wp-mcp - GitHub",
+                      "text": "\u2699\ufe0f Configuration * Create wp-sites.json. Create a wp-sites.json file to configure your WordPress sites: { \"default_test\": { \"URL\":"
+                    }
+                  ]
+                }
+              ],
+              "references": [
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "WordPress Developer Resources",
+                  "domain": "developer.wordpress.org",
+                  "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+                  "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+                  "text": "What is the WordPress MCP Adapter? The WordPress MCP Adapter is an official package in the AI Building Blocks for WordPress initia..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "Reddit",
+                  "domain": "www.reddit.com",
+                  "url": "https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/",
+                  "title": "Claude takes over WordPress with MCP - Reddit",
+                  "text": "TigrouMeow. Award this post 3 Awards. Claude takes over WordPress with MCP. Development. Just wanted to share that finally, we can..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "GitHub",
+                  "domain": "github.com",
+                  "url": "https://github.com/Automattic/wordpress-mcp",
+                  "title": "Automattic/wordpress-mcp: WordPress MCP \u2014 This ... - GitHub",
+                  "text": "WordPress MCP. A comprehensive WordPress plugin that implements the Model Context Protocol (MCP) to expose WordPress functionality..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "Reddit",
+                  "domain": "www.reddit.com",
+                  "url": "https://www.reddit.com/r/mcp/comments/1sbcwx7/i_built_a_wordpress_mcp_server_and_its_changed/",
+                  "title": "I built a WordPress MCP server and it's changed how I manage my ...",
+                  "text": "Here's a real example of what a morning looks like now. I tell Claude I want to clear out my draft queue and schedule three posts ..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "WordPress Developer Resources",
+                  "domain": "developer.wordpress.org",
+                  "url": "https://developer.wordpress.org/plugins/wordpress-org/using-the-mcp-server/",
+                  "title": "Using the WordPress.org MCP Server \u2013 Plugin Handbook",
+                  "text": "In this article. ... What is MCP? ... WordPress.org provides an MCP (Model Context Protocol) server that lets AI-powered developme..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "GitHub",
+                  "domain": "github.com",
+                  "url": "https://github.com/wordpress/mcp-adapter",
+                  "title": "WordPress/mcp-adapter: An MCP adapter that ... - GitHub",
+                  "text": "Features * Core Functionality. Ability-to-MCP Conversion: Automatically converts WordPress abilities into MCP tools, resources, an..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "Make WordPress",
+                  "domain": "make.wordpress.org",
+                  "url": "https://make.wordpress.org/ai/2025/07/17/mcp-adapter/",
+                  "title": "MCP Adapter - Make WordPress",
+                  "text": "Introduction. Model Context Protocol (MCP) is an open protocol that standardizes how applications provide context to LLMs. In Word..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "YouTube",
+                  "domain": "www.youtube.com",
+                  "url": "https://www.youtube.com/watch?v=GRJYGLTpQLQ",
+                  "title": "WordPress Studio + MCP: A Better AI Workflow| WordPress.com",
+                  "text": "recently I discovered an open-source WordPress Studio MCP server that's going to completely change how you build WordPress sites w..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "WordPress.org",
+                  "domain": "wordpress.org",
+                  "url": "https://wordpress.org/plugins/royal-mcp/",
+                  "title": "Royal MCP \u2013 Secure AI Connector for Claude, ChatGPT & Gemini",
+                  "text": "Description. ... Your browser can't play this video. ... An error occurred. Try watching this video on www.youtube.com, or enable ..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "GitHub",
+                  "domain": "github.com",
+                  "url": "https://github.com/stefans71/wordpress-mcp-server",
+                  "title": "stefans71/wordpress-mcp-server - GitHub",
+                  "text": "Add the server to your MCP settings file with environment variables for WordPress credentials: * { \"mcpServers\": { \"wordpress\": { ..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "WooCommerce",
+                  "domain": "developer.woocommerce.com",
+                  "url": "https://developer.woocommerce.com/docs/features/mcp/",
+                  "title": "Model Context Protocol (MCP) Integration",
+                  "text": "MCP Clients (like Claude Code) communicate using the MCP protocol over stdio/JSON-RPC; Local Proxy ( @automattic/mcp-wordpress-rem..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "GitHub",
+                  "domain": "github.com",
+                  "url": "https://github.com/deus-h/claudeus-wp-mcp",
+                  "title": "deus-h/claudeus-wp-mcp - GitHub",
+                  "text": "\u2699\ufe0f Configuration * Create wp-sites.json. Create a wp-sites.json file to configure your WordPress sites: { \"default_test\": { \"URL\":"
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "GitHub",
+                  "domain": "github.com",
+                  "url": "https://github.com/Automattic/mcp-wordpress-remote",
+                  "title": "Automattic/mcp-wordpress-remote - GitHub",
+                  "text": "WordPress MCP Plugin Install the MCP Adapter plugin on your WordPress site. Once active, it registers a default MCP server at /wp-"
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "Awesome MCP Servers",
+                  "domain": "mcpservers.org",
+                  "url": "https://mcpservers.org/servers/kungtekno/wp-mcp",
+                  "title": "WordPress MCP Server",
+                  "text": "WordPress MCP Server. A secure bridge between AI assistants and WordPress, enabling site management and content operations through..."
+                },
+                {
+                  "type": "ai_overview_reference",
+                  "position": "right",
+                  "source": "BionicWP",
+                  "domain": "bionicwp.com",
+                  "url": "https://bionicwp.com/wordpress-mcp",
+                  "title": "WordPress MCP \u2014 Let AI Manage Your WordPress Site",
+                  "text": "What is WordPress MCP? WordPress MCP gives AI agents secure, authenticated access to your WordPress site using the Model Context P..."
+                }
+              ],
+              "rectangle": null
+            },
+            {
+              "type": "organic",
+              "rank_group": 4,
+              "rank_absolute": 5,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[8]/div[1]/div[1]",
+              "domain": "github.com",
+              "title": "WordPress/mcp-adapter: An MCP ...",
+              "url": "https://github.com/wordpress/mcp-adapter",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "https://github.com \u203a wordpress \u203a mcp-adapter",
+              "website_name": "GitHub",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "The MCP Adapter automatically creates a default server that exposes registered WordPress abilities through a layered architecture. This provides immediate MCP\u00a0... Read more",
+              "pre_snippet": null,
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "automatically creates a default server that exposes registered WordPress abilities"
+              ],
+              "links": null,
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": null,
+              "rectangle": null
+            },
+            {
+              "type": "video",
+              "rank_group": 1,
+              "rank_absolute": 6,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[10]/div[1]",
+              "items": [
+                {
+                  "type": "video_element",
+                  "source": "YouTube \u00b7 Raddy",
+                  "title": "Turn WordPress into an AI-Powered CMS with MCP + Claude Code",
+                  "timestamp": "2025-10-20 00:00:00 +00:00",
+                  "url": "https://www.youtube.com/watch?v=xPZJACF11es&vl=en"
+                },
+                {
+                  "type": "video_element",
+                  "source": "YouTube \u00b7 WebSensePro",
+                  "title": "How To Connect Claude AI to WordPress via MCP (Step-by-step)",
+                  "timestamp": "2026-06-12 17:56:42 +00:00",
+                  "url": "https://www.youtube.com/watch?v=nHE6PcA5pfc"
+                },
+                {
+                  "type": "video_element",
+                  "source": "YouTube \u00b7 WordPress.com",
+                  "title": "WordPress Studio + MCP: A Better AI Workflow| WordPress.com",
+                  "timestamp": "2026-04-03 00:00:00 +00:00",
+                  "url": "https://www.youtube.com/watch?v=GRJYGLTpQLQ"
+                }
+              ],
+              "rectangle": null
+            },
+            {
+              "type": "organic",
+              "rank_group": 5,
+              "rank_absolute": 7,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[12]/div[1]/div[1]",
+              "domain": "mcpservers.org",
+              "title": "WordPress MCP Server",
+              "url": "https://mcpservers.org/servers/kungtekno/wp-mcp",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "https://mcpservers.org \u203a Servers",
+              "website_name": "Awesome MCP Servers",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "WordPress MCP Server provides a secure bridge between AI assistants and WordPress installations, allowing for content management, site administration, and\u00a0... Read more",
+              "pre_snippet": null,
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "WordPress MCP Server"
+              ],
+              "links": null,
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": null,
+              "rectangle": null
+            },
+            {
+              "type": "perspectives",
+              "rank_group": 1,
+              "rank_absolute": 8,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[14]/div[1]",
+              "title": "What people are saying",
+              "items": [
+                {
+                  "type": "perspectives_element",
+                  "title": "WordPress Playground now has an official MCP server via the new @wp-playground/mcp package. One command connects Claude Code or Gemini CLI to a local Playground instance for file access, PHP execution, and site management. https://lnkd.in/erkFQ",
+                  "description": null,
+                  "url": "https://www.linkedin.com/posts/wordpress_wordpressdevelopment-activity-7451615977437446144-GoLF",
+                  "domain": "www.linkedin.com",
+                  "date": "Apr 19, 2026",
+                  "source": "WordPress",
+                  "timestamp": "2026-04-19 00:00:00 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "A WordPress MCP for Claude & ChatGPT you can try now - WPVibe",
+                  "description": null,
+                  "url": "https://www.youtube.com/watch?v=ZPmYQXWDUMA",
+                  "domain": "www.youtube.com",
+                  "date": "1 month ago",
+                  "source": "WP Minute Tutorials",
+                  "timestamp": "2026-05-19 17:56:42 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "One of my clients asked me to install Claude MCP onto their WordPress site and I'm terrified of the repercussions",
+                  "description": null,
+                  "url": "https://www.reddit.com/r/webdev/comments/1s07yeq/one_of_my_clients_asked_me_to_install_claude_mcp/",
+                  "domain": "www.reddit.com",
+                  "date": "Mar 22, 2026",
+                  "source": "r/webdev",
+                  "timestamp": "2026-03-22 00:00:00 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "WordPress Playground now has an official MCP server via the new  @wp-playground/mcp package. One command connects Claude Code or Gemini CLI to a local Playground instance for file access, PHP execution, and site management.",
+                  "description": null,
+                  "url": "https://x.com/WordPress/status/2045850287039037647?lang=en&ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Etweet",
+                  "domain": "x.com",
+                  "date": "Apr 19, 2026",
+                  "source": "WordPress",
+                  "timestamp": "2026-04-19 00:00:00 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "WordPress + Claude AI: How to Setup MCP in 5 Minutes (FREE)",
+                  "description": null,
+                  "url": "https://www.youtube.com/watch?v=b1LGjFntbsQ",
+                  "domain": "www.youtube.com",
+                  "date": "2 weeks ago",
+                  "source": "Key2Blogging",
+                  "timestamp": "2026-06-05 17:56:42 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "How To Connect Claude AI to WordPress via MCP (Step-by-step)",
+                  "description": null,
+                  "url": "https://www.youtube.com/watch?v=nHE6PcA5pfc",
+                  "domain": "www.youtube.com",
+                  "date": "1 week ago",
+                  "source": "WebSensePro",
+                  "timestamp": "2026-06-12 17:56:42 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "Developing for WordPress using AI just got a big boost with the WordPress Studio MCP server. Want to see how? Jonathan Bossenger has you covered in his latest walk-through!",
+                  "description": null,
+                  "url": "https://www.facebook.com/WordPresscom/posts/developing-for-wordpress-using-ai-just-got-a-big-boost-with-the-wordpress-studio/1350235337151252/",
+                  "domain": "www.facebook.com",
+                  "date": "Apr 3, 2026",
+                  "source": "WordPresscom",
+                  "timestamp": "2026-04-03 00:00:00 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "WordPress Studio + MCP: A Better AI Workflow| WordPress.com",
+                  "description": null,
+                  "url": "https://www.youtube.com/watch?v=GRJYGLTpQLQ",
+                  "domain": "www.youtube.com",
+                  "date": "Apr 3, 2026",
+                  "source": "WordPress.com",
+                  "timestamp": "2026-04-03 00:00:00 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "[FREE] I built an MCP Server for WordPress with full undo (like Git for AI actions)",
+                  "description": null,
+                  "url": "https://www.reddit.com/r/WordpressPlugins/comments/1sk5byv/free_i_built_an_mcp_server_for_wordpress_with/",
+                  "domain": "www.reddit.com",
+                  "date": "Apr 13, 2026",
+                  "source": "r/WordpressPlugins",
+                  "timestamp": "2026-04-13 00:00:00 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "I Built WordPress with MCP Server - Here's What Happened",
+                  "description": null,
+                  "url": "https://www.youtube.com/watch?v=8-e3qIVpuhA",
+                  "domain": "www.youtube.com",
+                  "date": "4 weeks ago",
+                  "source": "Digifix",
+                  "timestamp": "2026-05-22 17:56:42 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "I recently updated to WordPress 7.0, and I\u2019m currently exploring this question: Will WordPress release its own MCP that can directly integrate with AI tools like Claude?",
+                  "description": null,
+                  "url": "https://www.reddit.com/r/Wordpress/comments/1tjj76w/i_recently_updated_to_wordpress_70_and_im/",
+                  "domain": "www.reddit.com",
+                  "date": "1 month ago",
+                  "source": "r/Wordpress",
+                  "timestamp": "2026-05-19 17:56:42 +00:00"
+                },
+                {
+                  "type": "perspectives_element",
+                  "title": "A Free Powerful WordPress MCP (Claude Code + Novamira)",
+                  "description": null,
+                  "url": "https://www.youtube.com/watch?v=vSgw2cJ8lIE",
+                  "domain": "www.youtube.com",
+                  "date": "Mar 27, 2026",
+                  "source": "Jeffrey @ Lytbox",
+                  "timestamp": "2026-03-27 00:00:00 +00:00"
+                }
+              ],
+              "rectangle": null
+            },
+            {
+              "type": "organic",
+              "rank_group": 6,
+              "rank_absolute": 9,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[16]/div[1]/div[1]",
+              "domain": "responsive.menu",
+              "title": "10 Best WordPress MCP Servers to Try in 2026",
+              "url": "https://responsive.menu/10-best-wordpress-mcp-servers/",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "https://responsive.menu \u203a 10-best-wordpress-mcp-servers",
+              "website_name": "Responsive Menu",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "Jan 15, 2026 \u2014 Best WordPress MCP Servers: 10 Options to Explore \u00b7 1. InstaWP WordPress MCP Server \u00b7 2. Official WordPress MCP Server \u00b7 3. InstaWP MCP-WP \u00b7 4. Read more",
+              "pre_snippet": "01/15/2026 00:00:00",
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "InstaWP WordPress MCP Server"
+              ],
+              "links": null,
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": "2026-01-15 00:00:00 +00:00",
+              "rectangle": null
+            },
+            {
+              "type": "organic",
+              "rank_group": 7,
+              "rank_absolute": 10,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[18]/div[1]/div[1]",
+              "domain": "webdevstudios.com",
+              "title": "Using WordPress MCP as a Development Tool",
+              "url": "https://webdevstudios.com/2025/06/11/using-wordpress-mcp-as-a-development-tool/",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "https://webdevstudios.com \u203a Blog",
+              "website_name": "WebDevStudios",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "Jun 11, 2025 \u2014 MCP stands for \u201cModel Context Protocol.\u201d It's a structured way to connect external tools or AI agents to a local or remote system. In simple\u00a0... Read more",
+              "pre_snippet": "06/11/2025 00:00:00",
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "MCP stands for \u201cModel Context Protocol"
+              ],
+              "links": null,
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": "2025-06-11 00:00:00 +00:00",
+              "rectangle": null
+            },
+            {
+              "type": "organic",
+              "rank_group": 8,
+              "rank_absolute": 11,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[2]/div[2]/div[1]/div[1]/div[20]/div[1]/div[1]",
+              "domain": "bionicwp.com",
+              "title": "WordPress MCP \u2014 Let AI Manage Your WordPress Site",
+              "url": "https://bionicwp.com/wordpress-mcp",
+              "cache_url": null,
+              "related_search_url": null,
+              "breadcrumb": "https://bionicwp.com \u203a wordpress-mcp",
+              "website_name": "BionicWP",
+              "is_image": false,
+              "is_video": false,
+              "is_featured_snippet": false,
+              "is_malicious": false,
+              "is_web_story": false,
+              "description": "Jun 9, 2026 \u2014 What is WordPress MCP? WordPress MCP gives AI agents secure, authenticated access to your WordPress site using the Model Context Protocol. Read more",
+              "pre_snippet": "06/09/2026 00:00:00",
+              "extended_snippet": null,
+              "images": null,
+              "amp_version": false,
+              "rating": null,
+              "price": null,
+              "highlighted": [
+                "WordPress MCP"
+              ],
+              "links": null,
+              "faq": null,
+              "extended_people_also_search": null,
+              "about_this_result": null,
+              "related_result": null,
+              "timestamp": "2026-06-09 00:00:00 +00:00",
+              "rectangle": null
+            },
+            {
+              "type": "related_searches",
+              "rank_group": 1,
+              "rank_absolute": 12,
+              "page": 1,
+              "position": "left",
+              "xpath": "/html[1]/body[1]/div[3]/div[1]/div[12]/div[1]/div[3]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]",
+              "items": [
+                "WordPress MCP adapter",
+                "Wordpress mcp server github",
+                "WordPress MCP server plugin",
+                "MCP WordPress remote",
+                "Free wordpress mcp server",
+                "WordPress MCP Elementor",
+                "WordPress MCP Claude",
+                "How to use wordpress mcp server"
+              ],
+              "rectangle": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

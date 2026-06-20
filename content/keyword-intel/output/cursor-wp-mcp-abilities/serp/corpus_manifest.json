@@ -1,0 +1,88 @@
+{
+  "keyword": "wordpress mcp server",
+  "generated_at": "2026-06-19T17:56:59.746949+00:00",
+  "location_code": 2840,
+  "language_code": "en",
+  "depth": 10,
+  "organic_count": 8,
+  "ai_overview_chars": 6682,
+  "corpus_chars": 97666,
+  "pages": [
+    {
+      "rank": 1,
+      "url": "https://github.com/Automattic/wordpress-mcp",
+      "title": "GitHub - Automattic/wordpress-mcp: ...",
+      "file": "serp/pages/01-github-com.md",
+      "status_code": 200,
+      "parse_mode": "ok",
+      "char_count": 11532
+    },
+    {
+      "rank": 2,
+      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+      "title": "From Abilities to AI Agents: Introducing the WordPress MCP ...",
+      "file": "serp/pages/02-developer-wordpress-org.md",
+      "status_code": 200,
+      "parse_mode": "ok",
+      "char_count": 25676
+    },
+    {
+      "rank": 3,
+      "url": "https://www.reddit.com/r/Wordpress/comments/1kbdrji/claude_takes_over_wordpress_with_mcp/",
+      "title": "Claude takes over WordPress with MCP",
+      "file": "serp/pages/03-reddit-com.md",
+      "status_code": 0,
+      "parse_mode": "empty",
+      "char_count": 0
+    },
+    {
+      "rank": 5,
+      "url": "https://github.com/wordpress/mcp-adapter",
+      "title": "WordPress/mcp-adapter: An MCP ...",
+      "file": "serp/pages/04-github-com.md",
+      "status_code": 200,
+      "parse_mode": "ok",
+      "char_count": 9641
+    },
+    {
+      "rank": 7,
+      "url": "https://mcpservers.org/servers/kungtekno/wp-mcp",
+      "title": "WordPress MCP Server",
+      "file": "serp/pages/05-mcpservers-org.md",
+      "status_code": 200,
+      "parse_mode": "ok",
+      "char_count": 8135
+    },
+    {
+      "rank": 9,
+      "url": "https://responsive.menu/10-best-wordpress-mcp-servers/",
+      "title": "10 Best WordPress MCP Servers to Try in 2026",
+      "file": "serp/pages/06-responsive-menu.md",
+      "status_code": 200,
+      "parse_mode": "ok",
+      "char_count": 19854
+    },
+    {
+      "rank": 10,
+      "url": "https://webdevstudios.com/2025/06/11/using-wordpress-mcp-as-a-development-tool/",
+      "title": "Using WordPress MCP as a Development Tool",
+      "file": "serp/pages/07-webdevstudios-com.md",
+      "status_code": 200,
+      "parse_mode": "ok",
+      "char_count": 7968
+    },
+    {
+      "rank": 11,
+      "url": "https://bionicwp.com/wordpress-mcp",
+      "title": "WordPress MCP \u2014 Let AI Manage Your WordPress Site",
+      "file": "serp/pages/08-bionicwp-com.md",
+      "status_code": 200,
+      "parse_mode": "ok",
+      "char_count": 4685
+    }
+  ],
+  "dataforseo_endpoints": [
+    "serp/google/organic/live/advanced",
+    "on_page/content_parsing/live"
+  ]
+}

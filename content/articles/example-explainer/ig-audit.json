@@ -1,0 +1,37 @@
+{
+  "audit_mode": "draft-article",
+  "page_intent": "example-explainer",
+  "page_intent_note": "Draft audit for example-explainer",
+  "target_url": "",
+  "date": "2026-06-19",
+  "compared_against": "Brief delta commitments",
+  "recommendation": "publish-ready",
+  "recommendation_plain": "Draft meets publish threshold.",
+  "total_score": 12,
+  "max_score": 12,
+  "scores": {
+    "Delta Fidelity": 2,
+    "Artifact Realization": 2,
+    "Evidence Traceability": 2,
+    "SERP Novelty": 2,
+    "Decision Utility": 2,
+    "Risk Honesty": 2
+  },
+  "score_notes": {
+    "Delta Fidelity": "Draft reflects 2/2 delta titles.",
+    "Artifact Realization": "Required artifacts represented (2/2).",
+    "Evidence Traceability": "Draft references evidence patterns and artifact root exists.",
+    "SERP Novelty": "Proof-claim language appears in draft.",
+    "Decision Utility": "Clear action language for readers.",
+    "Risk Honesty": "Limits and caveats appear stated."
+  },
+  "keep_these": [],
+  "fix_first": [],
+  "blockers": [],
+  "next_steps": [
+    "Proceed to information-gain-auditor HTML render"
+  ],
+  "rewrite_target_score": 10,
+  "brief_path": "content\\articles\\example-explainer\\brief.html",
+  "draft_path": "content\\articles\\example-explainer\\brief.html"
+}

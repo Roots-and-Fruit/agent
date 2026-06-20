@@ -1,0 +1,70 @@
+{
+  "primary": "wordpress mcp server",
+  "primary_metrics": {
+    "search_volume": 210,
+    "keyword_difficulty": 22,
+    "competition_level": "LOW",
+    "main_intent": "navigational"
+  },
+  "secondaries": [
+    "wordpress abilities api",
+    "cursor wordpress mcp",
+    "wordpress mcp adapter",
+    "wordpress mcp server plugin"
+  ],
+  "secondary_metrics": {
+    "wordpress abilities api": {
+      "search_volume": 70,
+      "competition_level": "LOW",
+      "main_intent": "navigational",
+      "foreign_intent": ["informational"]
+    }
+  },
+  "top_results": [
+    {
+      "rank": 1,
+      "url": "https://github.com/Automattic/wordpress-mcp",
+      "title": "Automattic wordpress-mcp plugin",
+      "baseline_topics": ["MCP plugin install", "generic WordPress MCP exposure", "Claude Desktop config"]
+    },
+    {
+      "rank": 2,
+      "url": "https://developer.wordpress.org/news/2026/02/from-abilities-to-ai-agents-introducing-the-wordpress-mcp-adapter/",
+      "title": "From Abilities to AI Agents: MCP Adapter",
+      "baseline_topics": ["Abilities API", "MCP Adapter architecture", "Claude Desktop setup"]
+    },
+    {
+      "rank": 3,
+      "url": "https://github.com/wordpress/mcp-adapter",
+      "title": "WordPress MCP Adapter",
+      "baseline_topics": ["abilities registration", "default MCP server", "layered architecture"]
+    },
+    {
+      "rank": 4,
+      "url": "https://developer.wordpress.com/docs/mcp/",
+      "title": "WordPress.com MCP docs (Cursor directory)",
+      "baseline_topics": ["WordPress.com hosted MCP", "Cursor MCP directory", "not self-hosted"]
+    },
+    {
+      "rank": 5,
+      "url": "https://responsive.menu/10-best-wordpress-mcp-servers/",
+      "title": "10 Best WordPress MCP Servers listicle",
+      "baseline_topics": ["plugin roundup", "third-party MCP servers", "no custom ability design"]
+    },
+    {
+      "rank": 6,
+      "url": "https://webdevstudios.com/2025/06/11/using-wordpress-mcp-as-a-development-tool/",
+      "title": "Using WordPress MCP as a development tool",
+      "baseline_topics": ["MCP definition", "dev workflow", "generic tool connection"]
+    }
+  ],
+  "serp_features": ["ai_overview", "video", "people_also_ask", "related_searches"],
+  "related_searches": [
+    "WordPress MCP adapter",
+    "Wordpress mcp server github",
+    "WordPress MCP server plugin",
+    "MCP WordPress remote",
+    "WordPress MCP Claude",
+    "How to use wordpress mcp server"
+  ]
+}

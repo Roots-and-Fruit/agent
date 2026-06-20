@@ -1,0 +1,76 @@
+{
+  "corpus_token_count": 1648,
+  "novel_claims": [
+    "I run [rootsandfruit.com](https://rootsandfruit.com/) as a one-person shop: self-hosted WordPress on Cloudways, Kadence, Breeze cache.",
+    "From there I split responsibilities on purpose: block work goes through `rootsandfruit/blocks-*`; title and excerpt go through `rootsandfruit/update-post`.",
+    "Generic MCP setups often mirror large parts of the REST API.",
+    "**What I deliberately left out:** post delete, trash, cache purge.",
+    "Breeze cache clears stay manual\u2014I purge after byline changes so logged-out preview matches what I expect.",
+    "**Purge Breeze cache** \u2014 manual, after byline change, so logged-out preview is trustworthy.",
+    "If you wire Cursor MCP the way I describe here, I would start with proof\u2014not faith.",
+    "Run **`rootsandfruit/ping`** via MCP and confirm plugin version (1.5.1+ if you need `set-post-author`).",
+    "Ship your first piece as **draft + preview**, not straight to publish.",
+    "Plugin source and ability registrations: [github.com/Roots-and-Fruit/abilities](https://github.com/Roots-and-Fruit/abilities)."
+  ],
+  "delta_wins": [
+    {
+      "delta": "rootsandfruit/",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "set-post-author",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "blocks-create-page",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "enable-public-preview",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "audit-mcp-abilities",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "wordpress-rootsandfruit",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "innerhtml",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "cache purge",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "gk block mcp",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "one mcp server",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "public preview",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "breeze cache",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    },
+    {
+      "delta": "test-wordpress-mcp-http",
+      "note": "Operator-specific marker in draft, absent from SERP corpus."
+    }
+  ],
+  "baseline_gaps": [],
+  "intent_signals": {
+    "primary_intent": "navigational",
+    "navigational_hits": 6,
+    "informational_hits": 9
+  },
+  "recommended_fixes": []
+}
