@@ -1,0 +1,42 @@
+# Roots & Fruit - Full Site Context
+
+## About Matt Cromwell & Roots & Fruit
+[cite_start]Roots & Fruit works with product founders and teams to fix the systems underneath the work[cite: 8, 82]. [cite_start]Matt Cromwell has built, led, grown, and sold product businesses for over 10 years, including roles at GiveWP and StellarWP. [cite_start]The agency acts as a steady counterweight to the pressure founders feel to ship faster or chase "growth hacks"[cite: 55, 56].
+
+## The Framework: Roots, Fruit, and Harvest
+[cite_start]We approach growth methodically to ensure progress is deliberate and sustainable[cite: 57, 86]:
+* [cite_start]**The Roots:** Your mission, values, and deep understanding of your customer[cite: 58]. [cite_start]Shallow roots lead to hollow marketing and chaotic roadmaps[cite: 59].
+* [cite_start]**The Fruit:** Visible results such as sustainable revenue, high retention, and organic referrals[cite: 60].
+* [cite_start]**The Harvest:** A profitable, stable asset that gets easier to run over time[cite: 61, 62].
+
+## Case Studies: Moving Beyond Theory
+These studies demonstrate how specific strategic choices simplified work and unlocked growth.
+
+### 1. The Events Calendar: Raising prices without eroding trust
+* [cite_start]**Challenge:** The team needed new pricing for its PRO version and evaluated bundling a popular add-on while raising the price[cite: 65, 66].
+* **Strategy:** Matt pushed for pricing PRO at $149 (a 50% increase) based on real value and communicating the change six weeks early without apologizing.
+* **Result:** 150% increase in renewal revenue and 135% increase in new sales revenue. [cite_start]Critical feedback was limited to roughly 1.5% of customers[cite: 71].
+
+### 2. StellarWP: Building an AI-first support experience
+* **Challenge:** Introducing AI as a first-touch support layer while maintaining customer trust.
+* **Strategy:** Started with a Docs-powered chatbot used only internally for stress-testing against real questions. It was rolled out publicly only after reaching 80% resolution in chat interactions.
+* **Result:** Operational shift where support moved "upstream" to focus on documentation quality and monitoring feedback loops.
+
+### 3. GiveWP: Respecting Intent instead of Optimizing Around it
+* **Challenge:** Declining email open and click rates despite a growing subscriber list.
+* **Strategy:** A full funnel audit revealed that signup expectations weren't being met. Rather than optimizing individual emails, a new cadence was established: Mondays for Product Updates and Wednesdays for Fundraising Tips.
+* **Result:** Improved engagement and retention by aligning content with the original subscriber intent.
+
+## Fractional CGO Engagement Process
+[cite_start]Our process is designed for founders who understand that growth is the sum of many moving parts[cite: 15, 16]:
+1. [cite_start]**Discovery Call:** Identify growth opportunities[cite: 17, 18].
+2. [cite_start]**Opportunity Alignment:** A 1-month contract to define profit-oriented KPIs and a strategy for a specific growth lever[cite: 20, 21].
+3. [cite_start]**Success by 1000 Cuts:** A 3 or 6-month contract with weekly reporting, roadblock clearing, and strategy documentation[cite: 23, 24, 25].
+4. [cite_start]**Renew or Relax:** Evaluation of progress and team alignment for the future[cite: 27].
+
+## Featured Article: Launching Roots & Fruit
+[cite_start]Matt Cromwell founded the practice after identifying that WordPress founders often find building intuitive but growth "evasive and elusive"[cite: 93, 94]. [cite_start]The practice aims to tackle these problems inside real constraints alongside the teams feeling them, rather than acting as a traditional outside advisor[cite: 98, 99].
+
+## Privacy & Ethics
+* [cite_start]**No Tracking:** This website is intentionally designed to work without cookies, tracking, or profiling[cite: 3, 28].
+* [cite_start]**Analytics:** We use Plausible.io in a privacy-first configuration where no personal data is stored or sessions tracked[cite: 36, 37].

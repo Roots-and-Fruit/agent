@@ -93,6 +93,25 @@ Requires `unfiltered_html` — use an administrator Application Password, not th
 
 
 
+### robots.txt / llms.txt (document root)
+
+
+
+Requires custom capability `update_robots_llms_txt` (granted to Administrator on plugin activate/upgrade).
+
+
+
+| Ability | Use |
+|---------|-----|
+| `rootsandfruit/get-robots-llms-txt` | Read `robots.txt`, `llms.txt`, or `llms-full.txt` (`file`: `robots` \| `llms` \| `llms-full`) |
+| `rootsandfruit/update-robots-llms-txt` | Replace file body; requires `expected_sha256` from get; update-only (no create/delete) |
+
+Canonical local copies: `agent/content/discovery/`. Use administrator Application Password for writes.
+
+Kill switch: `define( 'RF_ROBOTS_LLMS_TXT_WRITABLE', false );` in `wp-config.php`.
+
+
+
 ### Cursor Agent role
 
 
@@ -105,7 +124,7 @@ Use a dedicated user with a custom role. Recommended capabilities:
 
 - `edit_published_posts`, `edit_others_posts` (if agents edit existing posts/pages)
 
-- Do **not** grant `delete_*`, `manage_options`, or plugin/theme caps
+- Do **not** grant `delete_*`, `manage_options`, `update_robots_llms_txt`, or plugin/theme caps
 
 
 

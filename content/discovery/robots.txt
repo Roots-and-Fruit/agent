@@ -1,0 +1,59 @@
+# robots.txt - rootsandfruit.com
+# Policy: max_discovery (search + AI answer crawl allowed; training crawlers blocked)
+# See also: https://rootsandfruit.com/llms.txt
+
+# Training crawlers — block model/corpus reuse
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# AI answer / discovery crawlers
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Search indexing crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# All other crawlers
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /?s=
+Disallow: /page/*/?s=
+Disallow: /search/
+Allow: /wp-admin/admin-ajax.php
+Allow: /
+
+Sitemap: https://rootsandfruit.com/sitemap.xml

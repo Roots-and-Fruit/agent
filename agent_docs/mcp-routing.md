@@ -38,7 +38,7 @@ Cursor chat
 | Profile | WP user | Use for | Typical caps |
 |---------|---------|---------|--------------|
 | **Content agent** | Cursor Agent (custom `agent` role) | Posts, blocks, preview, drafts | `edit_posts`, `publish_posts`, `edit_others_posts`, `upload_files` |
-| **Admin** | Administrator | Snippets, plugin updates | + `unfiltered_html`, `update_plugins` |
+| **Admin** | Administrator | Snippets, plugin updates, robots/llms files | + `unfiltered_html`, `update_plugins`, `update_robots_llms_txt` |
 
 Both use **Application Passwords** in `.env` (`ROOTSANDFRUIT_MCP_*`). Same user = same caps on MCP and REST.
 
@@ -73,16 +73,21 @@ Run `mcp-adapter-discover-abilities` or `audit-mcp-abilities.ps1` after deploys.
 
 | Module | Abilities | Permission basis |
 |--------|-----------|------------------|
-| Health | `ping` | `read` |
+| Health | `ping`, `purge-breeze-cache` | `read` / `edit_posts` (optional `post_id` → `edit_post`) |
+| Discovery | `get-robots-llms-txt`, `update-robots-llms-txt` | `read` / `update_robots_llms_txt` |
 | Content | `list-posts`, `get-post`, `create-draft`, `update-post`, `publish-post`, `set-post-author` | `edit_posts` / `edit_post` / `publish_posts` / `edit_others_posts` |
 | Preview | `enable-public-preview`, `get-public-preview-url` | `edit_post` (requires Public Post Preview plugin) |
 | Blocks | `blocks-get-page`, `blocks-update`, `blocks-mutate`, `blocks-insert`, `blocks-create-page`, `blocks-list-patterns` | `edit_post` (requires `gk-block-mcp`) |
 | Snippets | `snippets-list` … `snippets-verify` | `unfiltered_html` |
-| Plugins | `plugin-update-safe` | `update_plugins` |
+| Plugins | `plugin-update-safe`, `plugin-update-git-safe` (when Git Updater active) | `update_plugins` |
 
-**Not registered:** post delete, cache purge. Use REST or add a new ability.
+**Not registered:** post delete.
 
-**Author:** prefer `rootsandfruit/set-post-author`; REST fallback in escape hatches section.
+**Cache purge:** prefer `rootsandfruit/purge-breeze-cache` (server-side, after plugin deploy) or `.\tools\scripts\purge-breeze-cache.ps1` (`BREEZE_TOKEN` in `.env`, Bearer auth). Snippet deploy scripts call purge automatically.
+
+**Git plugin deploy:** `rootsandfruit/plugin-update-git-safe` (after plugin deploy) or `.\tools\scripts\update-git-plugin.ps1` (`GIT_UPDATER_KEY` in `.env`). Git Updater slug may differ from folder name (`abilities` vs `rootsandfruit-abilities`). Use `target_version` or `override` for release-asset plugins; script flushes GU cache and nudges wp-cron first.
+
+**Author:** prefer `rootsandfruit/set-post-author` with optional `purge_breeze: true`; REST fallback in escape hatches section.
 
 ---
 
@@ -175,12 +180,13 @@ Default article byline on rootsandfruit.com: **user ID `1`**. Use unless the ope
   "ability_name": "rootsandfruit/set-post-author",
   "parameters": {
     "post_id": 1306,
-    "author": 1
+    "author": 1,
+    "purge_breeze": true
   }
 }
 ```
 
-`author` accepts user ID (integer) or login (string). Response includes `breeze_purge_reminder: true` — purge Breeze before sharing logged-out preview URLs.
+`author` accepts user ID (integer) or login (string). When `purge_breeze` is true and Breeze is active, cache clears on the server. Otherwise run `.\tools\scripts\purge-breeze-cache.ps1` before sharing logged-out preview URLs.
 
 **Step F — public preview link**
 
@@ -247,6 +253,51 @@ Prefer over `create-draft` when the deliverable is Gutenberg blocks.
 
 Check `preference.tier` and `has_legacy_blocks` before inserting Kadence/legacy patterns.
 
+### 6. Update robots.txt / llms.txt (admin credential)
+
+Canonical copies live in `agent/content/discovery/`. Files must already exist on the server (update-only).
+
+**Step A — read current file + sha256**
+
+```json
+{
+  "ability_name": "rootsandfruit/get-robots-llms-txt",
+  "parameters": { "file": "llms" }
+}
+```
+
+`file`: `robots` | `llms` | `llms-full`.
+
+**Step B — dry run (optional)**
+
+```json
+{
+  "ability_name": "rootsandfruit/update-robots-llms-txt",
+  "parameters": {
+    "file": "llms",
+    "content": "# Roots & Fruit\n\n> …",
+    "expected_sha256": "<sha256 from step A>",
+    "dry_run": true
+  }
+}
+```
+
+**Step C — write + purge cache**
+
+```json
+{
+  "ability_name": "rootsandfruit/update-robots-llms-txt",
+  "parameters": {
+    "file": "llms",
+    "content": "# Roots & Fruit\n\n> …",
+    "expected_sha256": "<sha256 from step A>",
+    "purge_breeze": true
+  }
+}
+```
+
+Requires `update_robots_llms_txt` (administrator Application Password). On sha mismatch, returns `409` — re-run get and merge.
+
 ---
 
 ## REST escape hatches
@@ -278,10 +329,25 @@ Agent user may only see a subset; search often still resolves display names.
 
 Logged-out HTML is served from **Breeze page cache**. Logged-in users bypass it.
 
-After author, byline, or hero meta changes:
+After author, byline, hero meta, snippet deploy, or publish:
 
-1. WP Admin → **Breeze → Purge All Cache** (or Cloudways Varnish purge), or
-2. Re-save post and confirm cache timestamp in HTML footer updates.
+```powershell
+# From agent/ — Bearer token from BREEZE_TOKEN in .env
+.\tools\scripts\purge-breeze-cache.ps1
+```
+
+**MCP (after abilities plugin deploy):**
+
+```json
+{
+  "ability_name": "rootsandfruit/purge-breeze-cache",
+  "parameters": {}
+}
+```
+
+Optional per-post purge (Breeze 2.4+): `{ "post_id": 123 }`.
+
+**set-post-author** accepts `purge_breeze: true` to purge on the server in the same call. If the response has `breeze_purge_reminder: true`, run the script above.
 
 Do not share public preview URLs until logged-out view matches.
 
