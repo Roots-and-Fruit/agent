@@ -20,6 +20,10 @@ content/
 
 │   ├── draft.md                 ← article-writer output
 
+│   ├── excerpt.txt              ← hero excerpt / SEO meta (140–155 chars; required for publish)
+
+│   ├── key-takeaways.txt        ← sidebar takeaways (1–12 lines; required for publish)
+
 │   ├── ig-audit.html            ← publish/revise audit (HTML)
 
 │   └── ig-audit.json            ← machine-readable scores
@@ -64,7 +68,7 @@ content/
 
 | 4 | `/article-writer` | `articles/<slug>/draft.md` | — |
 
-| 5 | `/voiceprint-audit` | revised `draft.md` | **Review draft** |
+| 5 | `/voiceprint-audit` | revised `draft.md` + `excerpt.txt` + `key-takeaways.txt` | **Review draft + excerpt + takeaways** |
 
 | 6 | `/information-gain-auditor` | `ig-audit.html` + `ig-audit.json` | — |
 
@@ -89,6 +93,31 @@ Canonical style examples: `content/articles/example-explainer/brief.html` and `i
 
 **Code Block Pro:** MCP inserts `core/code` only. In wp-admin, focus each code block → **Convert to Code Pro** → Save (uses your site Shiki defaults). See `/rf-article-publish` step 7b.
 
-Publish: `python tools/scripts/publish-article-preview.py content/articles/<slug>/`
+Publish: `python tools/scripts/publish-article-preview.py content/articles/<slug>/` (reads `excerpt.txt` and `key-takeaways.txt` automatically)
+
+## Hero excerpt (`excerpt.txt`)
+
+WordPress `post_excerpt` drives the Kadence hero quote and SEO meta. Without it, the theme falls back to body paragraph 1.
+
+| Stage | Excerpt job |
+|-------|-------------|
+| `/rf-keyword-research` | Draft line in `articles/<slug>/keyword-research.md` (`## SEO meta description`) |
+| `/content-brief` | Commit in `brief.html` Keywords / Hero Excerpt (140–155 chars; STOP gate) |
+| `/voiceprint-audit` | Finalize `excerpt.txt` — must **not** duplicate draft ¶1 |
+| `/rf-article-publish` | Auto-read `excerpt.txt` → `blocks-create-page` |
+
+Rules: single line, 140–155 characters, enticing hook (not the article lede). Validator: `tools/scripts/article-excerpt.py`.
+
+## Key takeaways (`key-takeaways.txt`)
+
+WordPress post meta `_rf_key_takeaways` (LCF ordered-list repeater) drives the Kadence sidebar **Key Takeaways** widget and ItemList JSON-LD (`rootsandfruit/key-takeaways-json-ld`).
+
+| Stage | Takeaways job |
+|-------|---------------|
+| `/content-brief` | Optional bullets in brief for writer alignment |
+| `/voiceprint-audit` | Finalize `key-takeaways.txt` — one bullet per line |
+| `/rf-article-publish` | Auto-read → `rootsandfruit/set-key-takeaways` after `blocks-create-page` |
+
+Rules: 1–12 lines (typically 3), scannable sidebar bullets (not body copy). Validator: `tools/scripts/article-key-takeaways.py`.
 
 Plan: [`agent/.cursor/plans/rf-article-pipeline.plan.md`](../.cursor/plans/rf-article-pipeline.plan.md).

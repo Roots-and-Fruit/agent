@@ -38,24 +38,27 @@ After MCP creates the draft:
 python tools/scripts/publish-article-preview.py content/articles/<slug>/
 ```
 
-Steps: `draft-md-to-blocks.py` → `blocks-create-page` → `set-post-author` (default **1**) → `enable-public-preview` → `preview.json`.
+Steps: `draft-md-to-blocks.py` → `blocks-create-page` → `set-key-takeaways` → `set-post-author` (default **1**, `purge_breeze: true`) → Breeze purge fallback → `enable-public-preview` → `preview.json`.
 
 **Encoding:** use `invoke-mcp-ability.py` for manual MCP calls (UTF-8 safe). Converter emits HTML entities in `innerHTML`.
 
 ## Ability sequence (preview)
 
 1. `rootsandfruit/blocks-create-page` — create draft with blocks
-2. `rootsandfruit/blocks-get-page` — verify
-3. `rootsandfruit/set-post-author` — `{ post_id, author }`
-4. `rootsandfruit/enable-public-preview` — `{ post_id }`
-5. **STOP** — share `preview_url` and `edit_url`; user converts code blocks in editor (see below)
-6. `rootsandfruit/publish-post` — only on explicit user approval (after convert + preview OK)
+2. `rootsandfruit/set-key-takeaways` — `{ post_id, items: ["…", "…"] }` from `key-takeaways.txt`
+3. `rootsandfruit/blocks-get-page` — verify
+4. `rootsandfruit/set-post-author` — `{ post_id, author }`
+5. `rootsandfruit/enable-public-preview` — `{ post_id }`
+6. **STOP** — share `preview_url` and `edit_url`; confirm sidebar Key Takeaways; user converts code blocks in editor (see below)
+7. `rootsandfruit/publish-post` — only on explicit user approval (after convert + preview OK)
+
+Verify takeaways: `rootsandfruit/key-takeaways-json-ld` with `{ post_id }` → `count` matches `key-takeaways.txt`.
 
 ## Author parameter
 
 **Default (rootsandfruit.com articles):** user ID **`1`**.
 
-After author change: purge Breeze cache before trusting logged-out preview byline.
+After author change: `.\tools\scripts\purge-breeze-cache.ps1` (or `purge_breeze: true` on `set-post-author` after plugin deploy).
 
 ## Manual debug
 

@@ -75,7 +75,7 @@ Run `mcp-adapter-discover-abilities` or `audit-mcp-abilities.ps1` after deploys.
 |--------|-----------|------------------|
 | Health | `ping`, `purge-breeze-cache` | `read` / `edit_posts` (optional `post_id` → `edit_post`) |
 | Discovery | `get-robots-llms-txt`, `update-robots-llms-txt` | `read` / `update_robots_llms_txt` |
-| Content | `list-posts`, `get-post`, `create-draft`, `update-post`, `publish-post`, `set-post-author` | `edit_posts` / `edit_post` / `publish_posts` / `edit_others_posts` |
+| Content | `list-posts`, `get-post`, `create-draft`, `update-post`, `publish-post`, `set-post-author`, `set-key-takeaways` | `edit_posts` / `edit_post` / `publish_posts` / `edit_others_posts` |
 | Preview | `enable-public-preview`, `get-public-preview-url` | `edit_post` (requires Public Post Preview plugin) |
 | Blocks | `blocks-get-page`, `blocks-update`, `blocks-mutate`, `blocks-insert`, `blocks-create-page`, `blocks-list-patterns` | `edit_post` (requires `gk-block-mcp`) |
 | Snippets | `snippets-list` … `snippets-verify` | `unfiltered_html` |
@@ -187,6 +187,26 @@ Default article byline on rootsandfruit.com: **user ID `1`**. Use unless the ope
 ```
 
 `author` accepts user ID (integer) or login (string). When `purge_breeze` is true and Breeze is active, cache clears on the server. Otherwise run `.\tools\scripts\purge-breeze-cache.ps1` before sharing logged-out preview URLs.
+
+**Step E2 — key takeaways (LCF repeater)**
+
+After `blocks-create-page`, set sidebar takeaways from `content/articles/<slug>/key-takeaways.txt`:
+
+```json
+{
+  "ability_name": "rootsandfruit/set-key-takeaways",
+  "parameters": {
+    "post_id": 1306,
+    "items": [
+      "First takeaway.",
+      "Second takeaway.",
+      "Third takeaway."
+    ]
+  }
+}
+```
+
+Requires plugin **1.6.2+**. Uses `lcf_set_olist_items()` when the LCF MU plugin is present (repeater UI stays in sync); falls back to `_rf_key_takeaways` + `_rf_key_takeaways_html` meta. Verify with `rootsandfruit/key-takeaways-json-ld` (`count`, `enabled`).
 
 **Step F — public preview link**
 

@@ -1,0 +1,3 @@
+I audited 136 product sites' robots.txt files — zero passed a strict max_discovery preset; most inherit open crawl from User-agent: *.
+The robots-txt-audit skill separates training bots (GPTBot) from discovery bots (Googlebot, OAI-SearchBot) — blocking one does not block the other.
+@-mention the skill with audit_only, your domain, and cornerstone URLs; it outputs a per-bot matrix and handoff JSON, not a panic block list.

@@ -43,7 +43,7 @@ Credentials: [`agent/.env`](../../../.env) — `ROOTSANDFRUIT_MCP_*`, `DATAFORSE
 | 2 | `/grill-info-gain` | Info Gain Handoff block | — |
 | 3 | `/content-brief` | `content/articles/<slug>/brief.html` | **STOP** — user reviews/tweaks brief |
 | 4 | `/article-writer` | `content/articles/<slug>/draft.md` | — |
-| 5 | `/voiceprint-audit` | revised `draft.md` | **STOP** — user reviews/tweaks draft |
+| 5 | `/voiceprint-audit` | revised `draft.md` + `excerpt.txt` + `key-takeaways.txt` | **STOP** — user reviews draft, excerpt, takeaways |
 | 6 | `/information-gain-auditor` | `ig-audit.html` + `ig-audit.json` + `serp_delta.json` | — |
 | 7 | `/rf-article-publish` | WP draft + `preview_url` | **STOP** — user reviews public preview |
 | 8 | `/rf-article-publish` (approve) | `publish-post` on explicit OK | Live only after user says publish |
